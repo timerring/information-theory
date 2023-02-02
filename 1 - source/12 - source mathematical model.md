@@ -62,9 +62,7 @@ P
 \end{array}\right]=\left[\begin{array}{c}
 x \in(a, b) \\
 p(x)
-\end{array}\right], \quad \int_{a}^{b} p(x) d x=1$
-
-其中 $p(x) \geq 0$  为信源输出的概率密度函数
+\end{array}\right], \quad \int_{a}^{b} p(x) d x=1$，其中 $p(x) \geq 0$  为信源输出的概率密度函数
 
 #### 多维离散无记忆信源
 
@@ -130,4 +128,4 @@ a_{1} & \cdots & a_{M} \\
 p\left(a_{1}\right) & \cdots & p\left(a_{M}\right)
 \end{array}\right)
 $$
-每个 $X_{i}$  取自同一个字母表 $A=\left\{a_{1}, a_{2}, \ldots, a_{N}\right\}$ , 且 $X_{i}$  与 $\mathbf{X}$  同分布，因此, $\mathbf{X}^{\mathrm{N}}$  的符号集为 $A^{N}=\left\{\boldsymbol{a}_{1}, \ldots, \boldsymbol{a}^{N}\right\}, \boldsymbol{a}_{j}$  为多维信源中的一个矢量, 即 $a_{j} \in A^{N}$ , 矢量的个数为$n^{N}$,$\boldsymbol{a}_{\boldsymbol{j}}=\left(a_{j_{1}} a_{j_{2}, \ldots,}, a_{j N}\right)$,$a_{j k}$  为 $\boldsymbol{a}_{j} $的第 $\mathbf{k}$  个分量, **且 $p\left(\boldsymbol{a}_{j}\right)=\prod_{k=1}^{N} p_{j k}$** ,$p_{j k}$  为第 $\mathrm{j}$  个矢量第 $\mathrm{k}$  个分量取符号 $\boldsymbol{a}_{\mathrm{jk}}$  的概率。
+每个 $X_{i}$  取自同一个字母表 $A=\{a_{1}, a_{2}, \ldots, a_{N}\}$ , 且 $X_{i}$  与 $\mathbf{X}$  同分布，因此, $\mathbf{X}^{\mathrm{N}}$  的符号集为 $A^{N}=\{\boldsymbol{a}_{1}, \ldots, \boldsymbol{a}^{N}\}, \boldsymbol{a}_{j}$  为多维信源中的一个矢量, 即 $a_{j} \in A^{N}$ , 矢量的个数为$n^{N}$,$\boldsymbol{a}_{\boldsymbol{j}}=\left(a_{j_{1}} a_{j_{2}, \ldots,}, a_{j N}\right)$,$a_{j k}$  为 $\boldsymbol{a}_{j} $的第 $\mathbf{k}$  个分量, 且 $p\left(\boldsymbol{a}_{j}\right)=\prod_{k=1}^{N} p_{j k}$ ,$p_{j k}$  为第 $\mathrm{j}$  个矢量第 $\mathrm{k}$  个分量取符号 $\boldsymbol{a}_{\mathrm{jk}}$  的概率。
