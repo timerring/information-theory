@@ -29,7 +29,8 @@ $$
 
 如果信源 $\mathbf{X}$  的符号集 $\mathbf{A}=\left\{\mathbf{x}_{1}, \ldots, \mathbf{x}_{\mathrm{n}}\right\}$ , 信源在**离散时间**发出**单个符号**, 且符号发生的概率**相互独立**, 称为单符号离散无记忆信源, **数学模型**为:
 
-$\begin{array}{l}
+$$
+\begin{array}{l}
 {\left[\begin{array}{l}
 X \\
 P
@@ -38,8 +39,8 @@ x_{1} & \cdots & x_{n} \\
 p\left(x_{1}\right) & \cdots & p\left(x_{n}\right)
 \end{array}\right]} \\
 p\left(x_{i}\right) \geq 0, \quad \sum_{i=1}^{n} p\left(x_{i}\right)=1
-\end{array}$
-
+\end{array}
+$$
 其中 $p\left(x_{\mathrm{i}}\right)$  成为符号 $x_{\mathrm{i}}$  的先验概率。
 
 > Example1：一个二元无记忆信源, 符号集  A=\{0,1\} ,  p  为  X=0  的概率,  q  为  X=1  的概率,  q=1-p ; 请写出该信源的模型。
