@@ -6,15 +6,15 @@
 
 ## Content
 
-| Chapter | section                                                      | content                                          |
-| ------- | ------------------------------------------------------------ | ------------------------------------------------ |
-| 绪论    | [绪论](https://github.com/timerring/information-theory/blob/main/01_introduction.md) | 信息、消息和信号\|信息论研究的内容\|发展历程     |
-| 信源    | [信源分类](https://github.com/timerring/information-theory/blob/main/1%20-%20source/11%20-%20source%20classification.md) | 输出的信号取值分类 \| 输出信号(符号间)的依赖关系 |
-|         | [信源数学模型](https://github.com/timerring/information-theory/blob/main/1%20-%20source/12%20-%20source%20mathematical%20model.md) |                                                  |
-|         |                                                              |                                                  |
-|         |                                                              |                                                  |
-|         |                                                              |                                                  |
-|         |                                                              |                                                  |
+| Chapter | section                                                      | content                                                      |
+| ------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 绪论    | [绪论](https://github.com/timerring/information-theory/blob/main/01_introduction.md) | 信息、消息和信号\|信息论研究的内容\|发展历程                 |
+| 信源    | [信源分类](https://github.com/timerring/information-theory/blob/main/1%20-%20source/11%20-%20source%20classification.md) | 输出的信号取值分类 \| 输出信号(符号间)的依赖关系             |
+|         | [信源数学模型](https://github.com/timerring/information-theory/blob/main/1%20-%20source/12%20-%20source%20mathematical%20model.md) | 单符号离散无记忆信源 \| 多维离散无记忆信源 \| 离散无记忆信源的扩展源 |
+|         |                                                              |                                                              |
+|         |                                                              |                                                              |
+|         |                                                              |                                                              |
+|         |                                                              |                                                              |
 
 ## Reference
 
@@ -30,3 +30,4 @@
 
 1. 如果存在疑问或发现错误，欢迎提Issues交流订正。
 2. 如果遇到图片无法加载的情况，可以考虑使用代理，或者访问[博客网站](https://blog.csdn.net/m0_52316372/category_12102819.html) 。
+2. 如果发现Tex数学公式展示异常，可以安装插件[GitHub Math Display](https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjiblcjagnpmdmlgmda?hl=zh-CN)，安装后启用插件，刷新网页即可。
