@@ -27,7 +27,7 @@ $$
 
 #### 单符号离散无记忆信源(DMS, Discrete memoryless source)
 
-如果信源 $\mathbf{X}$  的符号集 $\mathbf{A}=\left\{\mathbf{x}_{1}, \ldots, \mathbf{x}_{\mathrm{n}}\right\}$ , 信源在**离散时间**发出**单个符号**, 且符号发生的概率**相互独立**, 称为单符号离散无记忆信源, **数学模型**为:
+如果信源 $\mathbf{X}$  的符号集 $\mathbf{A}=\{\mathbf{x}_{1}, \ldots, \mathbf{x}_{\mathrm{n}}\}$ , 信源在**离散时间**发出**单个符号**, 且符号发生的概率**相互独立**, 称为单符号离散无记忆信源, **数学模型**为:
 
 $$
 \begin{array}{l}
