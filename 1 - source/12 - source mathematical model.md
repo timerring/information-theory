@@ -77,7 +77,7 @@ $$
 \left(\begin{array}{c}
 X^{L} \\
 P(x)
-\end{array}\right) \\
+\end{array}\right)
 =\left(\begin{array}{ccccc}
 \left(a_{1} a_{1} \ldots a_{1}\right) & \ldots & \left(a_{1} a_{2 \ldots} a_{m}\right) & \ldots & \left(a_{n} a_{n} \ldots a_{n}\right) \\
 P\left(a_{1} a_{1} \ldots a_{1}\right) & \ldots & P\left(a_{1} a_{2 \ldots} a_{m}\right) & \ldots & P\left(a_{n} a_{n} \ldots a_{n}\right)
@@ -109,7 +109,7 @@ $$
 > \end{array}\right]$
 >
 > 其二次扩展信源为
-> $\left[\begin{array}{l}X^{2} \\ p(\alpha)\end{array}\right]=\left[\begin{array}{llll}\alpha_{1}(00) & \alpha_{2}(01) & \alpha_{3}(10) & \alpha_{4}(11) \\ p\left(\alpha_{1}\right) & p\left(\alpha_{2}\right) & p\left(\alpha_{3}\right) & p\left(\alpha_{4}\right)\end{array}\right] 
+> $\left[\begin{array}{l}X^{2} \\ p(\alpha)\end{array}\right]=\left[\begin{array}{llll}\alpha_{1}(00) & \alpha_{2}(01) & \alpha_{3}(10) & \alpha_{4}(11) \\ p\left(\alpha_{1}\right) & p\left(\alpha_{2}\right) & p\left(\alpha_{3}\right) & p\left(\alpha_{4}\right)\end{array}\right] \\
 > p\left(\alpha_{1}\right)=p^{2}, p\left(\alpha_{2}\right)=p(1-p)=p\left(\alpha_{3}\right) 
 > p\left(\alpha_{4}\right)=(1-p)^{2}$ 
 
@@ -128,4 +128,4 @@ a_{1} & \cdots & a_{M} \\
 p\left(a_{1}\right) & \cdots & p\left(a_{M}\right)
 \end{array}\right)
 $$
-每个 $X_{i}$  取自同一个字母表 $A=\{a_{1}, a_{2}, \ldots, a_{N}\}$ , 且 $X_{i}$  与 $\mathbf{X}$  同分布，因此, $\mathbf{X}^{\mathrm{N}}$  的符号集为 $A^{N}=\{\boldsymbol{a}_{1}, \ldots, \boldsymbol{a}^{N}\}, \boldsymbol{a}_{j}$  为多维信源中的一个矢量, 即 $a_{j} \in A^{N}$ , 矢量的个数为$n^{N}$,$\boldsymbol{a}_{\boldsymbol{j}}=\left(a_{j_{1}} a_{j_{2}, \ldots,}, a_{j N}\right)$,$a_{j k}$  为 $\boldsymbol{a}_{j} $的第 $\mathbf{k}$  个分量, 且 $p\left(\boldsymbol{a}_{j}\right)=\prod_{k=1}^{N} p_{j k}$ ,$p_{j k}$  为第 $\mathrm{j}$  个矢量第 $\mathrm{k}$  个分量取符号 $\boldsymbol{a}_{\mathrm{jk}}$  的概率。
+每个 $X_{i}$  取自同一个字母表 $A=\{a_{1}, a_{2}, \ldots, a_{N}\}$ , 且 $X_{i}$  与 $\mathbf{X}$  同分布，因此, $\mathbf{X}^{\mathrm{N}}$  的符号集为 $A^{N}=\{\boldsymbol{a}_{1}, \ldots, \boldsymbol{a}^{N}\}, \boldsymbol{a}_{j}$  为多维信源中的一个矢量, 即 $a_{j} \in A^{N}$ , 矢量的个数为$n^{N}$,$\boldsymbol{a}_{\boldsymbol{j}}=\left(a_{j_{1}} a_{j_{2}, \ldots,}, a_{j N}\right)$,$a_{j k}$  为 $\boldsymbol{a}_{j} $的第 $\mathbf{k}$  个分量, 且 $p\left(\boldsymbol{a}_{j}\right)=\prod_{k=1}^{N} p_{j k}$  ,$p_{j k}$  为第 $\mathrm{j}$  个矢量第 $\mathrm{k}$  个分量取符号 $\boldsymbol{a}_{\mathrm{jk}}$  的概率。
