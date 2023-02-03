@@ -2,7 +2,7 @@
 
 定义：一个平稳的时域离散随机过程的**熵速率 (entropy rate)** 定义为
 $$
-H=\lim _{n \rightarrow \infty} H\left(X_{n} \mid X_{1}, X_{2}, \ldots, X_{n-1}\right)
+H=\lim _{n \rightarrow \infty} H(X_{n} \mid X_{1}, X_{2}, \ldots, X_{n-1})
 $$
 具有记忆性的信源的**熵速率**定义为
 

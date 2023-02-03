@@ -139,7 +139,7 @@ H_{N}(X)=\frac{1}{N} H\left(X^{N}\right)=\frac{1}{N} H\left(X_{1} \cdots X_{N}\r
 $$
 **信源 $\mathrm{X}$  的极限符号熵定义为：**
 $$
-H_{\infty}(X)=\lim _{N \rightarrow \infty} \frac{1}{N} H\left(X^{N}\right)=\lim _{N \rightarrow \infty} \frac{1}{N} H\left(X_{1} \cdots X_{N}\right)
+H_{\infty}(X)=\lim _{N \rightarrow \infty} \frac{1}{N} H(X^{N})=\lim _{N \rightarrow \infty} \frac{1}{N} H(X_{1} \cdots X_{N})
 $$
 极限符号熵简称**符号熵**, 也称**熵率**。
 
@@ -148,7 +148,7 @@ $$
 (1) $H\left(X_{N} / X_{1} \cdots X_{N-1}\right)$ 不随 $\mathbf{N}$而增加;
 (2) $H_{N}(X) \geq H\left(X_{N} / X_{1} \cdots X_{N-1}\right) ;$
 (3)$H_{N}(X)$ 不随  N  而增加;
-(4) $H_{\infty}(X)$ 存在,且 $H_{\infty}(X)=\lim _{N \rightarrow \infty} H\left(X_{N} / X_{1} \cdots X_{N-1}\right)$
+(4) $H_{\infty}(X)$ 存在,且 $H_{\infty}(X)=\lim _{N \rightarrow \infty} H(X_{N} / X_{1} \cdots X_{N-1})$
 
 该式表明, 有记忆信源的符号熵也可通过计算极限条件熵得到。
 
