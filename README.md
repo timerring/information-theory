@@ -11,8 +11,11 @@
 | 绪论    | [绪论](https://github.com/timerring/information-theory/blob/main/01_introduction.md) | 信息、消息和信号\|信息论研究的内容\|发展历程                 |
 | 信源    | [信源分类](https://github.com/timerring/information-theory/blob/main/1%20-%20source/11%20-%20source%20classification.md) | 输出的信号取值分类 \| 输出信号(符号间)的依赖关系             |
 |         | [信源数学模型](https://github.com/timerring/information-theory/blob/main/1%20-%20source/12%20-%20source%20mathematical%20model.md) | 单符号离散无记忆信源 \| 多维离散无记忆信源 \| 离散无记忆信源的扩展源 |
-|         |                                                              |                                                              |
-|         |                                                              |                                                              |
+|         | 自信息                                                       | 信息量 \| 自信息定义 \| 联合自信息 \| 条件自信息             |
+|         | 信息熵                                                       | 信息熵的物理含义                                             |
+|         | 联合熵和条件熵                                               | 联合熵 \| 条件熵                                             |
+|         | 熵速率                                                       | 熵速率 \| 各类熵的关系                                       |
+|         | 序列熵                                                       | 离散无记忆信源的序列熵 \| 离散有记忆信源的序列熵             |
 |         |                                                              |                                                              |
 |         |                                                              |                                                              |
 

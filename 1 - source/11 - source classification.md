@@ -23,3 +23,7 @@
 2、有记忆信源: 信源先后发出的符号相互依赖。
 
 连续信源是有记忆信源。
+
+
+
+[返回首页](https://github.com/timerring/information-theory)

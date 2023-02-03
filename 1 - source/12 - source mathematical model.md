@@ -129,3 +129,16 @@ p\left(a_{1}\right) & \cdots & p\left(a_{M}\right)
 \end{array}\right)
 $$
 每个 $X_{i}$  取自同一个字母表 $A=\{a_{1}, a_{2}, \ldots, a_{N}\}$ , 且 $X_{i}$  与 $\mathbf{X}$  同分布，因此, $\mathbf{X}^{\mathrm{N}}$  的符号集为 $A^{N}=\{\boldsymbol{a}_{1}, \ldots, \boldsymbol{a}^{N}\}, \boldsymbol{a}_{j}$  为多维信源中的一个矢量, 即 $a_{j} \in A^{N}$ , 矢量的个数为$n^{N}$,$\boldsymbol{a}_{\boldsymbol{j}}=\left(a_{j_{1}} a_{j_{2}, \ldots,}, a_{j N}\right)$,$a_{j k}$  为 $\boldsymbol{a}_{j} $的第 $\mathbf{k}$  个分量, 且 $p\left(\boldsymbol{a}_{j}\right)=\prod_{k=1}^{N} p_{j k}$  ,$p_{j k}$  为第 $\mathrm{j}$  个矢量第 $\mathrm{k}$  个分量取符号 $\boldsymbol{a}_{\mathrm{jk}}$  的概率。
+
+
+
+参考文献：
+
+1. Proakis, John G., et al. *Communication systems engineering*. Vol. 2. New Jersey: Prentice Hall, 1994.
+2. Proakis, John G., et al. *SOLUTIONS MANUAL Communication Systems Engineering*. Vol. 2. New Jersey: Prentice Hall, 1994.
+3. 周炯槃. 通信原理（第3版）[M\]. 北京：北京邮电大学出版社, 2008.
+4. 樊昌信, 曹丽娜. 通信原理（第7版） [M\]. 北京：国防工业出版社, 2012.
+
+
+
+[返回首页](https://github.com/timerring/information-theory)
