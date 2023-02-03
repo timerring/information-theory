@@ -16,6 +16,10 @@
 |         |                                                              |                                                              |
 |         |                                                              |                                                              |
 
+### ChangeLog
+
+- v1.0基础结构 230201
+
 ## Reference
 
 [1] [Proakis, John G., et al. *Communication systems engineering*. Vol. 2. New Jersey: Prentice Hall, 1994.](https://github.com/timerring/information-theory/blob/main/reference/communication-systems-engineering.pdf)
@@ -31,3 +35,17 @@
 1. 如果存在疑问或发现错误，欢迎提Issues交流订正。
 2. 如果遇到图片无法加载的情况，可以考虑使用代理，或者访问[博客网站](https://blog.csdn.net/m0_52316372/category_12102819.html) 。
 2. 如果发现Tex数学公式展示异常，可以安装插件[GitHub Math Display](https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjiblcjagnpmdmlgmda?hl=zh-CN)，安装后启用插件，刷新网页即可。
+
+## More
+
+<div align=center>
+<p>扫描下方二维码关注公众号：AIShareLab</p>
+<img src="resources/qrcode.jpg" width = "180" height = "180">
+</div>
+
+
+&emsp;&emsp;AIShareLab，一个关注CV、AI、区块链、Web开发、硬件开发、5G通信等领域的热“AI”分享的社群，微信搜索公众号 AIShareLab 一起交流更多相关知识，前沿算法，Paper解读，项目源码，面经总结。﻿
+
+## LICENSE
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://img.shields.io/badge/license-CC BY--NC--SA 4.0-lightgrey" /></a><br />本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
