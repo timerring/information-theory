@@ -1,3 +1,7 @@
+- [熵速率 (entropy rate)](#熵速率-entropy-rate)
+- [各类熵的关系](#各类熵的关系)
+
+
 ### 熵速率 (entropy rate)
 
 定义：一个平稳的时域离散随机过程的**熵速率 (entropy rate)** 定义为
