@@ -41,7 +41,7 @@
 
 1. 如果存在疑问或发现错误，欢迎提Issues交流订正。
 2. 如果遇到图片无法加载的情况，可以考虑使用代理，或者访问[博客网站](https://blog.csdn.net/m0_52316372/category_12102819.html) 。
-2. 如果发现Tex数学公式展示异常，可以安装插件[GitHub Math Display](https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjiblcjagnpmdmlgmda?hl=zh-CN)，安装后启用插件，刷新网页即可。
+2. 如果发现Tex数学公式展示异常，可以安装插件[GitHub Math Display](https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjiblcjagnpmdmlgmda?hl=zh-CN)，安装后启用插件，刷新网页即可。也可以下载后本地软件打开。
 
 ## More
 

@@ -35,7 +35,7 @@
 对于有记忆信源, **极限熵**为
 
 $$
-H_{\infty}(X)=\lim _{N \rightarrow \infty} H\left(X_{N} / X_{1} \cdots X_{N-1}\right)=\lim _{N \rightarrow \infty} \frac{1}{N} H\left(X_{1} \cdots X_{N}\right)
+H_{\infty}(X)=\lim _{N \rightarrow \infty} H(X_{N} / X_{1} \cdots X_{N-1})=\lim _{N \rightarrow \infty} \frac{1}{N} H(X_{1} \cdots X_{N})
 $$
 这就是说需要传送某一信源的信息, 理论上只需要传送 $H_{\infty}(X)$  即可。但这必须掌握信源全部概率统计特性, 这显然是不现实的。实际上, 只能算出 $H_{m}(X)$  。那么与理论极限值相比, 就要多传送 $H_{m}(X)-H_{\infty}(X)$
 
