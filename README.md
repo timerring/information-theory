@@ -8,14 +8,18 @@
 
 | Chapter | section                                                      | content                                                      |
 | ------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 绪论    | [绪论](https://github.com/timerring/information-theory/blob/main/01_introduction.md) | 信息、消息和信号\|信息论研究的内容\|发展历程                 |
-| 信源    | [信源分类](https://github.com/timerring/information-theory/blob/main/1%20-%20source/11%20-%20source%20classification.md) | 输出的信号取值分类 \| 输出信号(符号间)的依赖关系             |
-|         | [信源数学模型](https://github.com/timerring/information-theory/blob/main/1%20-%20source/12%20-%20source%20mathematical%20model.md) | 单符号离散无记忆信源 \| 多维离散无记忆信源 \| 离散无记忆信源的扩展源 |
-|         | [自信息](https://github.com/timerring/information-theory/blob/main/1%20-%20source/13%20-%20self%20information.md) | 信息量 \| 自信息定义 \| 联合自信息 \| 条件自信息             |
+| 绪论    | [绪论](https://github.com/timerring/information-theory/blob/main/01_introduction.md) | 信息、消息和信号  \|  信息论研究的内容  \|  发展历程         |
+| 信源    | [信源分类](https://github.com/timerring/information-theory/blob/main/1%20-%20source/11%20-%20source%20classification.md) | 输出的信号取值分类 \|  输出信号(符号间)的依赖关系            |
+|         | [信源数学模型](https://github.com/timerring/information-theory/blob/main/1%20-%20source/12%20-%20source%20mathematical%20model.md) | 单符号离散无记忆信源  \|  多维离散无记忆信源  \|  离散无记忆信源的扩展源 |
+|         | [自信息](https://github.com/timerring/information-theory/blob/main/1%20-%20source/13%20-%20self%20information.md) | 信息量  \|  自信息定义  \|  联合自信息   \|  条件自信息      |
 |         | [信息熵](https://github.com/timerring/information-theory/blob/main/1%20-%20source/14%20-%20information%20entropy.md) | 信息熵的物理含义                                             |
-|         | [联合熵和条件熵](https://github.com/timerring/information-theory/blob/main/1%20-%20source/15%20-%20Joint%20Entropy%20and%20Conditional%20Entropy.md) | 联合熵 \| 条件熵                                             |
-|         | [熵速率](https://github.com/timerring/information-theory/blob/main/1%20-%20source/16%20-%20entropy%20rate.md) | 熵速率 \| 各类熵的关系                                       |
-|         | [序列熵](https://github.com/timerring/information-theory/blob/main/1%20-%20source/17%20-%20sequence%20entropy.md) | 离散无记忆信源的序列熵 \| 离散有记忆信源的序列熵             |
+|         | [联合熵和条件熵](https://github.com/timerring/information-theory/blob/main/1%20-%20source/15%20-%20Joint%20Entropy%20and%20Conditional%20Entropy.md) | 联合熵  \|  条件熵                                           |
+|         | [熵速率](https://github.com/timerring/information-theory/blob/main/1%20-%20source/16%20-%20entropy%20rate.md) | 熵速率  \| 各类熵的关系                                      |
+|         | [序列熵](https://github.com/timerring/information-theory/blob/main/1%20-%20source/17%20-%20sequence%20entropy.md) | 离散无记忆信源的序列熵  \|  离散有记忆信源的序列熵           |
+|         | [极限熵和冗余度]()                                           | 极限熵  \|  冗余度                                           |
+|         | chapter focus                                                | 信源模型:记忆离散无记忆信源的数学模型。 <br />自信息:会计算。 <br />信息熵、联合熵、条件熵: 会计算，能够分析并计算离散信源的信息速率。<br />列举信息熵、联合熵、条件熵直接的关系。 |
+|         |                                                              |                                                              |
+|         |                                                              |                                                              |
 |         |                                                              |                                                              |
 |         |                                                              |                                                              |
 
