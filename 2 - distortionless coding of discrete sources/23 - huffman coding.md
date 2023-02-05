@@ -68,12 +68,13 @@ $$
 > x_{l} & x_{2} & x_{3} & x_{4} & x_{5} & x_{6} & x_{7} \\
 > 0.20 & 0.19 & 0.18 & 0.17 & 0.15 & 0.10 & 0.01
 > \end{array}\right]
-
 > $$
+> 
+
 > ![](https://raw.githubusercontent.com/timerring/picgo/master/picbed/image-20230205144515353.png)
 >
-> + 熵
->$$
+> 熵
+> $$
 > \begin{array}{l}
 > H(X) \\
 > \begin{aligned}
@@ -83,18 +84,18 @@ $$
 > \end{aligned}
 > \end{array}
 > $$
-> - 平均码长为
->$$
+> 平均码长为
+> $$
 > \begin{array}{l}
->\bar{K}=\sum_{i=1}^{7} p\left(x_{i}\right) K_{i} \\
+> \bar{K}=\sum_{i=1}^{7} p\left(x_{i}\right) K_{i} \\
 > =0.2 \times 2+0.19 \times 2+0.18 \times 3+0.17 \times 3+0.15 \times 3+0.10 \times 4 
 > +0.01 \times 4=2.72
 > \end{array}
 > $$
-> - 编码效率
+> 编码效率
 > $$
 > \eta=\frac{H(X)}{R}=\frac{H(X)}{\bar{K}}=\frac{2.61}{2.72}=96 \%
->$$
+> $$
 
 **霍夫曼的编法并不唯一**。每次对缩减信源两个概率最小的符号分配“0”和“1”码元是任意的,所以可得到不同的码字。只要在各次缩减信源中保持码元分配的一致性,即能得到可分离码字。不同的码元分配,得到的具体码字不同,但码长$K_i$不变,平均码长也不变,所以没有本质区别;
 
@@ -163,7 +164,7 @@ s_{1} & s_{2} & s_{3} & s_{4} & s_{5} \\
 $$
 解: (1) 不做扩展, 进行单符号Huffuman编码时 编码结果为:
 $$
-\begin{array}{ccc}s_{1} & 1 & \\ s_{2} & 01 & H(S)=2.122 b i t / s y m \\ s_{3} & 000 & \bar{l}=2.2 \text { 码元 } / \text { sym } \\ s_{4} & 0010 & \eta=H(S) / \bar{l}=0.965 \\ s_{5} & 0011 & \end{array} 
+\begin{array}{ccc}s_{1} & 1 & \\ s_{2} & 01 & H(S)=2.122 b i t / s y m \\ s_{3} & 000 & \bar{l}=2.2 \text { 码元 } / \text { sym } \\ s_{4} & 0010 & \eta=H(S) / \bar{l}=0.965 \\ s_{5} & 0011 & \end{array}
 $$
 （2）二次扩展信源  $\mathrm{S}^{2}$ , 共有  $5^{2}=25$  个信源符号, 为
 $$

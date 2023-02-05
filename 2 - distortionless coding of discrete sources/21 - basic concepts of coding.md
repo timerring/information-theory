@@ -8,8 +8,8 @@
 
 + 信源编码器输入的消息序列:
   $$
-  \boldsymbol{X}=\left(X_{1} X_{2} \ldots X_{l} \quad \ldots X_{L}\right) ,
-  X_{l} \in\left\{a_{1}, \ldots a_{n}\right\}
+  \boldsymbol{X}=(X_{1} X_{2} \ldots X_{l} \quad \ldots X_{L}) ,
+  X_{l} \in\{a_{1}, \ldots a_{n}\}
   $$
   输入的消息总共有  $n^{L}$  种可能的组合
 
@@ -17,8 +17,8 @@
 
   $$
   \begin{array}{l}
-  Y=\left(Y_{1} Y_{2} \ldots Y_{k} \ldots Y_{K}\right),
-  Y_{k} \in\left\{b_{1}, \ldots b_{m}\right\}
+  Y=(Y_{1} Y_{2} \ldots Y_{k} \ldots Y_{K}),
+  Y_{k} \in\{b_{1}, \ldots b_{m}\}
   \end{array}
   $$
   输出的码字总共有  $m^{K}$种可能的组合。
@@ -41,7 +41,7 @@
 
 ![](https://raw.githubusercontent.com/timerring/picgo/master/picbed/image-20220923113517071.png)
 
-> 例 信源符号$X=\left\{a_{1}, a_{2}, a_{3}, a_{4}\right\}$对应不同码字如表
+> 例 信源符号$X=\{a_{1}, a_{2}, a_{3}, a_{4}\}$对应不同码字如表
 >
 > ![](https://raw.githubusercontent.com/timerring/picgo/master/picbed/image-20220923113809815.png)
 >

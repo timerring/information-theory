@@ -10,9 +10,9 @@ b. 能够无失真或**无差错地从  $\mathbf{Y}$  恢复  $\mathbf{X}$** , �
 
 c. 传送  $\mathbf{Y}$  时所需要的**信息率最小**。
 
-- 信源编码器输入的消息序列:  $\mathbf{X}=\left(\mathrm{X}_{1} \mathrm{X}_{2} \ldots \mathrm{X}_{l} \ldots \mathrm{X}_{L}\right) ,  \mathbf{X}_{l} \in\left\{a_{1}, \ldots a_{\mathrm{n}}\right\}$ ,
+- 信源编码器输入的消息序列:  $\mathbf{X}=(\mathrm{X}_{1} \mathrm{X}_{2} \ldots \mathrm{X}_{l} \ldots \mathrm{X}_{L}) ,  \mathbf{X}_{l} \in\{a_{1}, \ldots a_{\mathrm{n}}\}$ ,
 输入的消息总共有  $n^{L}$  种可能的组合
-- 输出的码字为:  $\mathrm{Y}=\left(\mathrm{Y}_{1} \mathrm{Y}_{2} \ldots \mathrm{Y}_{k} \ldots \mathrm{Y}_{K}\right) ,  \mathbf{Y}_{k} \in\left\{\mathbf{b}_{1}, \ldots \mathbf{b}_{\mathrm{m}}\right\}$ 
+- 输出的码字为:  $\mathrm{Y}=(\mathrm{Y}_{1} \mathrm{Y}_{2} \ldots \mathrm{Y}_{k} \ldots \mathrm{Y}_{K}) ,  \mathbf{Y}_{k} \in\{\mathbf{b}_{1}, \ldots \mathbf{b}_{\mathrm{m}}\}$ 
 输出的码字总共有  $m^{K}$  种可能的组合。 
 - **信息率最小就是找到一种编码方式使  $\bar{K}=\frac{K}{L} \log m$  最小**
 
@@ -22,9 +22,9 @@ c. 传送  $\mathbf{Y}$  时所需要的**信息率最小**。
 
 在定长编码中,**输出码字的长度  $\mathbf{K}$  是定值。**我们的目的是**寻找最小K值**。
 
-编码器输入  $\mathrm{X}=\left(\mathrm{X}_{1} \mathrm{X}_{2} \ldots \mathrm{X}_{l} \ldots \mathrm{X}_{L}\right), \mathrm{X}_{l} \in\left\{a_{1}, \ldots a_{\mathrm{n}}\right\}$ , 输入的消息总共有  $n^{\mathrm{L}}$  种可 能的组合
+编码器输入  $\mathrm{X}=(\mathrm{X}_{1} \mathrm{X}_{2} \ldots \mathrm{X}_{l} \ldots \mathrm{X}_{L}), \mathrm{X}_{l} \in\{a_{1}, \ldots a_{\mathrm{n}}\}$ , 输入的消息总共有  $n^{\mathrm{L}}$  种可 能的组合
 
-输出 的码字  $\mathrm{Y}=\left(\mathrm{Y}_{1} \mathbf{Y}_{2} \ldots \mathrm{Y}_{k} \ldots \mathrm{Y}_{\mathrm{K}}\right), \mathrm{Y}_{k} \in\left\{\mathrm{b}_{1}, \ldots \mathrm{b}_{\mathrm{m}}\right\}$ , 输出的码字总共有  $m^{\mathrm{K}}$  种可能的组合。
+输出 的码字  $\mathrm{Y}=(\mathrm{Y}_{1} \mathbf{Y}_{2} \ldots \mathrm{Y}_{k} \ldots \mathrm{Y}_{\mathrm{K}}), \mathrm{Y}_{k} \in\{\mathrm{b}_{1}, \ldots \mathrm{b}_{\mathrm{m}}\}$ , 输出的码字总共有  $m^{\mathrm{K}}$  种可能的组合。
 
 若对信源进行**等长编码, 必须满足:  $n^{\mathrm{L}} \leq m^{\mathrm{K}}$**
 
@@ -80,7 +80,7 @@ $$
 $$
 L \geq \frac{\sigma^{2}(X)}{\varepsilon^{2} \delta}
 $$
-其中:  $\sigma^{2}(X)=E\left\{\left[I\left(x_{i}\right)-H(X)\right]^{2}\right\}$ , 为信源序列的自信息方差
+其中:  $\sigma^{2}(X)=E\{[I(x_{i})-H(X)]^{2}\}$ , 为信源序列的自信息方差
 
 > 若信源的数学模型如下所示:
 >
@@ -101,17 +101,17 @@ $$
 
 > 例  设离散无记忆信源概率空间
 >
-> $\left[\begin{array}{l}
+> $[\begin{array}{l}
 > X \\
 > P
-> \end{array}\right]=\left[\begin{array}{cccccccc}
+> \end{array}]=[\begin{array}{cccccccc}
 > a_{1} & a_{2} & a_{3} & a_{4} & a_{5} & a_{6} & a_{7} & a_{8} \\
 > 0.4 & 0.18 & 0.1 & 0.1 & 0.07 & 0.06 & 0.05 & 0.04
-> \end{array}\right]$
+> \end{array}]$
 >
-> - 信息熵:  $H(X)=-\sum_{i} p\left(x_{i}\right) \log p\left(x_{i}\right)=2.55 \mathrm{bit} /  符号$
+> - 信息熵:  $H(X)=-\sum_{i} p(x_{i}) \log p(x_{i})=2.55 \mathrm{bit} /  符号$
 >
-> - 方差:  $\sigma^{2}(X)=\sum_{i=1}^{8} p_{i}\left(\log p_{i}\right)^{2}-[H(X)]^{2}=7.82 b i t^{2} $
+> - 方差:  $\sigma^{2}(X)=\sum_{i=1}^{8} p_{i}(\log p_{i})^{2}-[H(X)]^{2}=7.82 b i t^{2} $
 >
 > - 若取差错率  $\delta \leq 10^{-6}$ , 编码效率为  $90 \%$ , 则  L  应满足
 >
