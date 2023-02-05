@@ -22,7 +22,7 @@ $$
 
 ### 霍夫曼编码的步骤
 
-1. 将信源消息符号按其出现的概率大小依次排列  $p\left(x_{1}\right) \geq p\left(x_{2}\right) \geq \ldots \geq p\left(x_{n}\right)$ 
+1. 将信源消息符号按其出现的概率大小依次排列  $p(x_{1}) \geq p(x_{2}) \geq \ldots \geq p(x_{n})$ 
 2. 取两个概率最小的字母分别配以 0 和 1 两码元, 并将这两个概率相加作为一个新字母的概率, 与未分配的二进 符号的字母重新排队。
 3. 对重排后的两个概率最小符号重复步骤(2)的过程。
 4. 不断继续上述过程,直到最后两个符号配以 0 和 1 为止
@@ -56,7 +56,7 @@ $$
 如果对长度为n的信源字符序列进行霍夫曼编码(信源的 n 次扩展信源) 而不是对单信源字符的编码, 则有
 
 $$
-H\left(X^{n}\right) \leq \overline{\boldsymbol{K}}_{n}<H\left(X^{n}\right)+1
+H(X^{n}) \leq \overline{\boldsymbol{K}}_{n}<H(X^{n})+1
 $$
 
 > 例 设单符号离散无记忆信源如下. 要求对信源编二进制霍夫曼码。
@@ -106,13 +106,13 @@ $$
 ### 例 单符号离散无记忆信源
 
 $$
-\left[\begin{array}{c}
+[\begin{array}{c}
 X \\
 P(X)
-\end{array}\right]=\left\{\begin{array}{lllll}
+\end{array}]=\{\begin{array}{lllll}
 x_{1}, & x_{2}, & x_{3}, & x_{4}, & x_{5} \\
 0.4 & 0.2 & 0.2 & 0.1 & 0.1
-\end{array}\right\}
+\end{array}\}
 $$
 
 ![](https://raw.githubusercontent.com/timerring/picgo/master/picbed/image-20230205150243343.png)
