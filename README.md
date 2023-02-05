@@ -19,12 +19,14 @@
 |                      | [极限熵和冗余度]()                                           | 极限熵  \|  冗余度                                           |
 |                      | chapter focus                                                | 信源模型:记忆离散无记忆信源的数学模型。 <br />自信息:会计算。 <br />信息熵、联合熵、条件熵: 会计算，能够分析并计算离散信源的信息速率。<br />列举信息熵、联合熵、条件熵直接的关系。 |
 | &emsp;               | &emsp;                                                       | &emsp;                                                       |
-| 离散信源的无失真编码 | 编码的基本概念                                               | 信源编码  \|  分类  \|  前缀条件                             |
-|                      | 无失真信源编码                                               | 无失真定长编码定理  \|  无失真变长编码定理  \|  无失真信源编码定理 |
-|                      | 霍夫曼编码                                                   | 最佳变长编码  \|  霍夫曼编码  \|  L-Z编码                    |
+| 离散信源的无失真编码 | [编码的基本概念](https://github.com/timerring/information-theory/blob/main/2%20-%20distortionless%20coding%20of%20discrete%20sources/21%20-%20basic%20concepts%20of%20coding.md) | 信源编码  \|  分类  \|  前缀条件                             |
+|                      | [无失真信源编码](https://github.com/timerring/information-theory/blob/main/2%20-%20distortionless%20coding%20of%20discrete%20sources/22%20-%20lossless%20source%20coding.md) | 无失真定长编码定理  \|  无失真变长编码定理  \|  无失真信源编码定理 |
+|                      | [霍夫曼编码](https://github.com/timerring/information-theory/blob/main/2%20-%20distortionless%20coding%20of%20discrete%20sources/23%20-%20huffman%20coding.md) | 最佳变长编码  \|  霍夫曼编码  \|  L-Z编码                    |
 |                      | chapter focus                                                | 阐述无失真信源编码的概念和条件;<br />区别并判断给定编码方案是否是无失真编码;<br />解释香农无失真信源编码定理;<br />给定信源数学模型，能够进行二进制霍夫曼编码; |
 
 ### ChangeLog
+
++ v1.1 Completed distortionless coding of discrete sources chapter update 230205
 
 - v1.1 Completed source chapter update 230204
 - v1.0 Completed introduction chapter update 230201
