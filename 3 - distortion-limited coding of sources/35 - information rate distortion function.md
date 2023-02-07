@@ -36,21 +36,31 @@ $$
 P_{D}=\left\{p\left(b_{j} \mid a_{i}\right): \bar{D} \leq D\right\}
 $$
 
+
+
 + **D失真允许的试验信道: 满足保真度准则的试验信道。**
 + $\mathbf{P}_{\mathrm{D}}$  : **所有D失真允许的试验信道组成的一个集合。**
 
 $\mathbf{R}(\mathbf{D}) $ : 在限定失真为  $\mathbf{D}$  的条件下信源输出的最小信息速率。
+
+
 $$
 R(D)=\min _{P_{D}} I(X, Y)
 $$
+
+
 在信源给定后,我们希望在满足一定失真的情况下,使信源必须传输给收信者的信息传输率  R  尽可能地小。若从接收端来着, 就是在满足保真度准则下, 寻找再**现信源消息所必须获得的最低平均信息量**。即在**满足保真度准则的条件下寻找平均互信息  $\mathrm{I}(\mathrm{X}, \mathrm{Y})$  的最小值。**
 
  $\mathbf{P}_{\mathbf{D}}$  是所有满足保真度准则的试验信道集合,因而可以在集合 $\mathbf{P}_{\mathbf{D}}$ 中寻找某一个信道 $p_{ij}$ , 使 $\mathrm{I}(\mathrm{X}, \mathrm{Y})$ 取极小值。
 
 对于离散无记忆信源
+
+
 $$
 R(D)=\min _{p_{j i} \in P_{D}} \sum_{i} \sum_{j} p\left(a_{i}\right) p\left(b_{j} \mid a_{i}\right) \log \frac{p\left(b_{j} \mid a_{i}\right)}{p\left(b_{j}\right)}
 $$
+
+
 
 > 例 已知编码器输入的概率分布为  $p(x)=\{0.5,0.5\}$ , 信道矩阵
 >
@@ -113,19 +123,27 @@ $$
 
 
 
-例: 设信源的符号表为  $\mathrm{A}=\left\{a_{1}, a_{2}, \ldots, a_{2 n}\right\}$ ,概率分布为  $p\left(a_{\mathrm{i}}\right)=1 / 2 \mathrm{n}$, $i=1,2 \ldots 2 n$ , 失真函数规定为
+例: 设信源的符号表为  $\mathrm{A}=\{a_{1}, a_{2}, \ldots, a_{2 n}\}$ ,概率分布为  $p(a_{\mathrm{i}})=1 / 2 \mathrm{n}$, $i=1,2 \ldots 2 n$ , 失真函数规定为
+
+
 $$
 d\left(a_{i}, a_{j}\right)=\left\{\begin{array}{ll}
 0 & i=j \\
 1 & i \neq j
 \end{array}\right.
 $$
+
+
 即不发生差错时失真为0 , 出错失真为1 。研究 在一定编码条件下信息压缩的程度。
 
 解：信源熵：
+
+
 $$
 H\left(\frac{1}{2 n}, \frac{1}{2 n} \cdots \frac{1}{2 n}\right)=\log 2 n
 $$
+
+
 如果对信源进行无失真编码, **平均每个符号至少需要  $\log 2 \mathrm{n}$  个二进制码元**。
 
 现在假定允许有一定失真,失真度为D=1/2，设想采用下面的编码方案;
