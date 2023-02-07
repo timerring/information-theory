@@ -33,7 +33,7 @@ $$
 
 
 $$
-P_{D}=\left\{p\left(b_{j} \mid a_{i}\right): \bar{D} \leq D\right\}
+P_{D}=\{p(b_{j} \mid a_{i}): \bar{D} \leq D\}
 $$
 
 
