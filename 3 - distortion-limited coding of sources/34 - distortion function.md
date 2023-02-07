@@ -13,12 +13,16 @@
 失真的大小, 用一个量来表示,即失真函数  $d(x_{i}, y_{j})$ , 以衡量用  $y_{j}$  代替  $x_{i}$  所引起的失真程度。
 
 失真函数定义为:
+
+
 $$
 d\left(x_{i}, y_{j}\right)=\left\{\begin{array}{ll}
 0 & x_{i}=y_{j} \\
 \alpha & (\alpha>0)  x_{i} \neq y_{j}
 \end{array}\right.
 $$
+
+
 
 ### 失真矩阵
 
