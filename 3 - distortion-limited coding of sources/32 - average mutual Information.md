@@ -22,9 +22,9 @@ $$
 
 通过信道传输消除了一些不确定性, 获得了一定的信息， 故$0 \leq I(X ; Y) \leq H(X)$
 
-> $I(X ; Y)=\sum_{i} \sum_{j} p\left(x_{i} y_{j}\right) \log \frac{p\left(x_{i} \mid y_{j}\right)}{p\left(x_{i}\right)}$
+> $I(X ; Y)=\sum_{i} \sum_{j} p(x_{i} y_{j}) \log \frac{p(x_{i} \mid y_{j})}{p(x_{i})}$
 >
-> $=\sum_{i} \sum_{j} p\left(x_{i} y_{j}\right) \log \frac{p\left(x_{i} y_{j}\right)}{p\left(x_{i}\right) p\left(y_{j}\right)}=\sum_{i} \sum_{j} p\left(x_{i} y_{j}\right) \log \frac{p\left(y_{j} \mid x_{i}\right)}{p\left(y_{j}\right)}$
+> $=\sum_{i} \sum_{j} p(x_{i} y_{j}) \log \frac{p(x_{i} y_{j})}{p(x_{i}) p(y_{j})}=\sum_{i} \sum_{j} p(x_{i} y_{j}) \log \frac{p(y_{j} \mid x_{i})}{p(y_{j})}$
 >
 > $=I(Y ; X)$
 
@@ -34,19 +34,19 @@ $$
 I(X ; Y)=I(Y ; X)
 $$
 
-> 例 假设一条电线上串联了 8 个灯泡 $ x_{1}, x_{2}, \ldots x_{8}$  如图, 这 8 个灯泡损坏的概率相等  $p\left(x_{\mathbf{i}}\right)=1 / 8$ , 现 假设只有一个灯泡已损坏, 致使串联灯泡都不能点亮。
+> 例 假设一条电线上串联了 8 个灯泡 $ x_{1}, x_{2}, \ldots x_{8}$  如图, 这 8 个灯泡损坏的概率相等  $p(x_{\mathbf{i}})=1 / 8$ , 现 假设只有一个灯泡已损坏, 致使串联灯泡都不能点亮。
 >
-> 未测量前, 8 个灯泡都有可能损坏, 它们损坏的先验概率:  $p\left(x_{\mathrm{i}}\right)=1 / 8$ , 这时存在的不确定性
+> 未测量前, 8 个灯泡都有可能损坏, 它们损坏的先验概率:  $p(x_{\mathrm{i}})=1 / 8$ , 这时存在的不确定性
 > $$
-> \mathrm{I}\left(\mathrm{x}_{i}\right)=\log \frac{1}{\mathrm{p}\left(\mathrm{x}_{i}\right)}=\log _{2} 8=3 \text { bit }
+> \mathrm{I}(\mathrm{x}_{i})=\log \frac{1}{\mathrm{p}(\mathrm{x}_{i})}=\log _{2} 8=3 \text { bit }
 > $$
-> 测量 1 次后, 可知 4 个灯泡是好的, 另 4 个灯泡中有一个是坏的,这时后验概率  $p\left(x_{\mathrm{i}} \mid y\right)=1 / 4$ ，尚存在的不确定性：
+> 测量 1 次后, 可知 4 个灯泡是好的, 另 4 个灯泡中有一个是坏的,这时后验概率  $p(x_{\mathrm{i}} \mid y)=1 / 4$ ，尚存在的不确定性：
 > $$
-> \mathrm{I}\left(\mathrm{x}_{i} \mid \mathrm{y}\right)=\log \frac{1}{\mathrm{p}\left(\mathrm{x}_{i} \mid \mathrm{y}\right)}=\log _{2} 4=2 \text { bit }
+> \mathrm{I}(\mathrm{x}_{i} \mid \mathrm{y})=\log \frac{1}{\mathrm{p}(\mathrm{x}_{i} \mid \mathrm{y})}=\log _{2} 4=2 \text { bit }
 > $$
 > 所获得的信息量就是测量前后不确定性减少的量, 测量1次获得的信息量:
 > $$
-> I\left(x_{i} ; y_{j}\right)=I\left(x_{i}\right)-I\left(x_{i} \mid y\right)=3-2=1 b i t
+> I(x_{i} ; y_{j})=I(x_{i})-I(x_{i} \mid y)=3-2=1 b i t
 > $$
 
 ### 平均互信息与各类熵的关系
@@ -151,9 +151,9 @@ P\left(X_{3}, Y\right)=\left[\begin{array}{cc}
 \end{array}\right]
 \end{array}
 $$
-得条件熵:  $H\left(Y \mid X_{1}\right)=0.9067, H\left(Y \mid X_{2}\right)=0.7704 ,  H\left(Y \mid X_{3}\right)=0.3451, H\left(Y \mid X_{4}\right)=0.9067$ 
+得条件熵:  $H(Y \mid X_{1})=0.9067, H(Y \mid X_{2})=0.7704 ,  H(Y \mid X_{3})=0.3451, H(Y \mid X_{4})=0.9067$ 
 
-平均互信息为:  $I\left(X_{1} ; Y\right)=0.0933, I\left(X_{2} ; Y\right)=0.2296 ,  I\left(X_{3} ; Y\right)=0.6549, I\left(X_{4} ; Y\right)=0.0933$ .
+平均互信息为:  $I(X_{1} ; Y)=0.0933, I(X_{2} ; Y)=0.2296 ,  I(X_{3} ; Y)=0.6549, I(X_{4} ; Y)=0.0933$ .
 
 结论：身高是最主要特征, 其次是性格。只保留这两项即可。
 
