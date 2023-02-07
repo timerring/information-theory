@@ -100,6 +100,8 @@ $$
 信道矩阵如下图所示，已知信源符号等概，采用汉明失真，求平均失真。
 
 ![](https://raw.githubusercontent.com/timerring/picgo/master/picbed/image-20230207122719969.png)
+
+
 $$
 \begin{array}{c}
 \boldsymbol{p}(\mathbf{0})=\boldsymbol{p}(\mathbf{1})=\mathbf{0} . \mathbf{5} \\
