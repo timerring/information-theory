@@ -41,12 +41,12 @@ p\left(y_{1}\right) & p\left(y_{2}\right) & \cdots & p\left(y_{n}\right)
 \end{array}\right]
 $$
 
-如果信道是**无噪**的,当信源发出消息  $x_{i}$  后,信宿必能准确无误地收到该消息, 彻底消除对  $x_{i}$  的不确定性, 所获得的信息量就是  $x_{i}$  的**自信息  $I\left(x_{i}\right)$ ，即 $x_{i}$ 本身含有的全部信息**。
+如果信道是**无噪**的,当信源发出消息  $x_{i}$  后,信宿必能准确无误地收到该消息, 彻底消除对  $x_{i}$  的不确定性, 所获得的信息量就是  $x_{i}$  的**自信息  $I(x_{i})$ ，即 $x_{i}$ 本身含有的全部信息**。
 
 一般而言，信道中总是存在着噪声和干扰，信源发出消息  $x_{i}$ ，通过信道后, 信宿只可能收到由于干扰作用引起的某种变形 $y_{j}$ 。(例如BSC信道，可能发出0收到1)
 
-+ 信宿收到  $y_{j}$  后推测信源发出  $x_{i}$  的概率  $p\left(x_{i} \mid y_{j}\right)$  称为**后验概率**。
-+ 信源发出消息  $x_{i}$  的概率  $p\left(x_{i}\right)$  称为**先验概率**。
++ 信宿收到  $y_{j}$  后推测信源发出  $x_{i}$  的概率  $p(x_{i} \mid y_{j})$  称为**后验概率**。
++ 信源发出消息  $x_{i}$  的概率  $p(x_{i})$  称为**先验概率**。
 
 ### 互信息定义
 
@@ -54,12 +54,12 @@ $$
 
 $$
 \begin{array}{c}
-I\left(x_{i} ; y_{j}\right)=\log _{2} \frac{p\left(x_{i} \mid y_{j}\right)}{p\left(x_{i}\right)} \\
-I\left(x_{i} ; y_{j}\right)=\log \frac{p\left(x_{i} \mid y_{j}\right)}{p\left(x_{i}\right)}=\log \frac{p\left(x_{i} y_{j}\right)}{p\left(x_{i}\right) p\left(y_{j}\right)}=\log \frac{p\left(y_{j} \mid x_{i}\right)}{p\left(y_{j}\right)}=I\left(y_{j} ; x_{i}\right) \\
-I\left(x_{i} ; y_{j}\right)=I\left(x_{i}\right)-I\left(x_{i} \mid y_{j}\right)=I\left(y_{j}\right)-I\left(y_{j} \mid x_{i}\right)
+I(x_{i} ; y_{j})=\log _{2} \frac{p(x_{i} \mid y_{j})}{p(x_{i})} \\
+I(x_{i} ; y_{j})=\log \frac{p(x_{i} \mid y_{j})}{p(x_{i})}=\log \frac{p(x_{i} y_{j})}{p(x_{i}) p(y_{j})}=\log \frac{p(y_{j} \mid x_{i})}{p(y_{j})}=I(y_{j} ; x_{i}) \\
+I(x_{i} ; y_{j})=I(x_{i})-I(x_{i} \mid y_{j})=I(y_{j})-I(y_{j} \mid x_{i})
 \end{array}
 $$
-**互信息  $I\left(x_{i} ; y_{j}\right)$  表示接收到某消息  $y_{j}$  后获得的关于事件  $x_{i}$  的信息量。**单位和自信息相同。
+**互信息  $I(x_{i} ; y_{j})$  表示接收到某消息  $y_{j}$  后获得的关于事件  $x_{i}$  的信息量。**单位和自信息相同。
 
 
 
