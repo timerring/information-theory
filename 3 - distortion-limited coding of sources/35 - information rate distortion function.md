@@ -7,21 +7,31 @@
 ### 信息率失真函数
 
 Theorem [Rate-Distortion]. 以小于或等于失真  D  去重构无记忆信源所需的最小信源输出 bit/sym 称为率失真函数 (rate-distortion function)，用  R(D)  表示, 记为
+
+
 $$
 R(D)=\min _{p\left(x^{\prime} \mid x\right) \mathrm{P}_{\mathrm{D}}\left(X, X^{\prime}\right) \leq D} I\left(X ; X^{\prime}\right)
 $$
+
+
 若平均失真度  $\bar{D}$  不大于我们所允许的失真,即 $\bar{D} \leq D$，则称此为**保真度准则**。
 
 当信源  $p\left(x_{i}\right)$  给定, 单个符号失真度  $d\left(x_{i},y_{j}\right)$  给定时, 选择不同的试验信道  $p\left(y_{j} \mid x_{i}\right)$ , 相当于不同的编码方法, 其所得的平均失真度不同。
 
 试验信道
+
+
 $$
 \left\{\begin{array}{l}
 \bar{D} \leq D  \text { 满足保真度准则 }\\
 \bar{D}>D
 \end{array}\right.
 $$
+
+
 满足  $\bar{D} \leq D$  条件的所有转移概率分布  $p_{i j}$  构成了一个信道集合
+
+
 $$
 P_{D}=\left\{p\left(b_{j} \mid a_{i}\right): \bar{D} \leq D\right\}
 $$
