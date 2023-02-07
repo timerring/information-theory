@@ -55,16 +55,18 @@ $$
 $$
 I(x_{i} ; y_{j})=\log _{2} \frac{p(x_{i} \mid y_{j})}{p(x_{i})}
 $$
+
+
+
 $$
 I(x_{i} ; y_{j})=\log \frac{p(x_{i} \mid y_{j})}{p(x_{i})}=\log \frac{p(x_{i} y_{j})}{p(x_{i}) p(y_{j})}=\log \frac{p(y_{j} \mid x_{i})}{p(y_{j})}=I(y_{j} ; x_{i})
 $$
 
+
+
 $$
 I(x_{i} ; y_{j})=I(x_{i})-I(x_{i} \mid y_{j})=I(y_{j})-I(y_{j} \mid x_{i})
 $$
-
-
-
 
 
 **互信息  $I(x_{i} ; y_{j})$  表示接收到某消息  $y_{j}$  后获得的关于事件  $x_{i}$  的信息量。**单位和自信息相同。
