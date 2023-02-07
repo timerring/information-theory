@@ -41,3 +41,14 @@ R(D)  的非增性也容易理解。允许的失真越大  $\rightarrow$  信息
 适应信源方式:认识信源的实际客观概率统计特性，寻找适应此类概率统计特性的编码方法。
 
 改造信源方式:改造信源的客观统计特性，即解除实际信源消息序列各消息间的统计相关性，使之**成为无记忆信源**，进而采用预测编码和变换编码。
+
+参考文献：
+
+1. Proakis, John G., et al. *Communication systems engineering*. Vol. 2. New Jersey: Prentice Hall, 1994.
+2. Proakis, John G., et al. *SOLUTIONS MANUAL Communication Systems Engineering*. Vol. 2. New Jersey: Prentice Hall, 1994.
+3. 周炯槃. 通信原理（第3版）[M\]. 北京：北京邮电大学出版社, 2008.
+4. 樊昌信, 曹丽娜. 通信原理（第7版） [M\]. 北京：国防工业出版社, 2012.
+
+
+
+[返回首页](https://github.com/timerring/information-theory)
