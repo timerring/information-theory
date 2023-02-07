@@ -1,3 +1,9 @@
+- [离散信源 R(D)计算](#离散信源-rd计算)
+  - [二元对称信源的  R(D)  函数](#二元对称信源的--rd--函数)
+- [高斯信源的 R(D)函数](#高斯信源的-rd函数)
+- [限失真信源编码定理](#限失真信源编码定理)
+
+
 ## 离散信源 R(D)计算
 
 给定信源概率  $p_{\mathrm{i}}$  和失真函数  $d_{\mathrm{i} j}$  就可以求得该信源的  R(D)  函数。
@@ -63,11 +69,13 @@ $$
 在这种试验信道条件下, 可计算得
 
 
+
 $$
 \mathbf{R}\left(\mathbf{D}_{\max }\right)=\min _{P_{D \max }} I(X ; Y)=\boldsymbol{H}(\boldsymbol{Y})-\boldsymbol{H}(\boldsymbol{Y} \mid \boldsymbol{X})=\mathbf{0}
 $$
-对于二进制无记忆信源, 若  $P\left(X_{\mathrm{i}}=0\right)=p, P\left(X_{\mathrm{i}}=1\right)=1-   p$ , 且采用汉明失真, 其率失真函数为
 
+
+对于二进制无记忆信源, 若  $P(X_{\mathrm{i}}=0)=p, P(X_{\mathrm{i}}=1)=1-   p$ , 且采用汉明失真, 其率失真函数为
 
 $$
 R(D)=\left\{\begin{array}{cc}
@@ -97,12 +105,15 @@ $$
 ## 高斯信源的 R(D)函数
 
 对于均值为 0 , 方差为  $\sigma^{2}$  的高斯信源, 采用平方失真时的率失真函数为
+
+
 $$
 R(D)=\left\{\begin{array}{cc}
 \frac{1}{2} \log \frac{\sigma^{2}}{D}, & 0 \leq D \leq \sigma^{2} \\
 0, & \text { otherwise }
 \end{array}\right.
 $$
+
 
 
 ![](https://raw.githubusercontent.com/timerring/picgo/master/picbed/image-20230207202532495.png)
@@ -126,7 +137,6 @@ $$
 $$
 R(D) \leq \bar{K} \leq R(D)+\varepsilon
 $$
-
 
 
 
