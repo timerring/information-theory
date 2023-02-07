@@ -177,6 +177,10 @@ $$
 
 
 
+> 已知信源符号x = 0.5,经过信道传输后变为y = 1.5,若采用汉明失真作为两个符号的失真度量，则d(x, y)= 1
+
+
+
 参考文献：
 
 1. Proakis, John G., et al. *Communication systems engineering*. Vol. 2. New Jersey: Prentice Hall, 1994.
