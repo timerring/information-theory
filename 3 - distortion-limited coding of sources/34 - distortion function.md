@@ -114,7 +114,6 @@ $$
 +\mathbf{0 . 5} \sum_{\boldsymbol{j}} p\left(b_{j} \mid \mathbf{1}\right) \boldsymbol{d}\left(\mathbf{1}, b_{j}\right) \\
 = 0.5(0.8*0 + 0.2*1 + 0*1)
 +0.5(0*1+0.3*1+0.7* 0)= 0.25
-
 \end{array}
 $$
 
