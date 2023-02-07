@@ -23,6 +23,11 @@
 |                      | [无失真信源编码](https://github.com/timerring/information-theory/blob/main/2%20-%20distortionless%20coding%20of%20discrete%20sources/22%20-%20lossless%20source%20coding.md) | 无失真定长编码定理  \|  无失真变长编码定理  \|  无失真信源编码定理 |
 |                      | [霍夫曼编码](https://github.com/timerring/information-theory/blob/main/2%20-%20distortionless%20coding%20of%20discrete%20sources/23%20-%20huffman%20coding.md) | 最佳变长编码  \|  霍夫曼编码  \|  L-Z编码                    |
 |                      | chapter focus                                                | 阐述无失真信源编码的概念和条件;<br />区别并判断给定编码方案是否是无失真编码;<br />解释香农无失真信源编码定理;<br />给定信源数学模型，能够进行二进制霍夫曼编码; |
+| &emsp;               | &emsp;                                                       | &emsp;                                                       |
+| 信源的限失真编码定理 |                                                              |                                                              |
+|                      |                                                              |                                                              |
+|                      |                                                              |                                                              |
+|                      |                                                              | 1、解释互信息的概念及性质，计算两事件之间的互信息和集合之间的平均互信息;<br/>2、解释限失真信源编码的概念;<br/>3、说明信息率失真函数的物理含义; |
 
 ### ChangeLog
 
