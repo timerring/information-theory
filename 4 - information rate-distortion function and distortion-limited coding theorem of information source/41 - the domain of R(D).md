@@ -19,9 +19,13 @@ $$
 $D_{\min }$  和  $R\left(D_{\min }\right)$ 
 
 信源的最小平均失真度:
+
+
 $$
 D_{\min }=\sum_{i=1}^{n} p\left(x_{i}\right) \min _{j} d\left(x_{i}, y_{j}\right)
 $$
+
+
 只有当失真矩阵的每一行至少有一个  $\mathbf{0}$  元素时,信源的平均失真度才能达到下限值  $\mathbf{0}$  。
 
 当  $\boldsymbol{D}_{\text {min }}=\mathbf{0}$ , 即信源不允许任何失真时,信息率至少应等于信源输出的平均信息量一信息熵。
@@ -49,7 +53,7 @@ $\mathbf{R}(\mathbf{D})$  的定义域为  $[D_{\text {min }}, D_{\text {max }}]
 + 通常  $D_{\text {min }}=0, \quad R\left(D_{\min }\right)=H(X)$ 
 
 + 当  $D \geq D_{\text {max }}$  时,  $\quad R(D)=0 $
-+ 当  $0 \leq D \leq D_{\text {max }}$  时，  $0<R(D)<H(X)$ 
++ 当  $0 \leq D \leq D_{\text {max }}$  时，  $0\lt R(D)\lt H(X)$ 
 
 由于  $I(X, Y)$  是非负函数,而  $R(D)$  是在约束条件下的  $I(X, Y)$  的最小值, 所以  $R(D)$  也是一个非负函数, 它的下限值是零。
 
@@ -131,6 +135,7 @@ $$
 >
 > 解: 
 >
+> 
 >
 > $$
 > \begin{array}{l}
