@@ -116,7 +116,7 @@ $$
 
 $\boldsymbol{m}$  序列具有非常重要的自相关特性。在  $\boldsymbol{m}$  序列中, 常常用  +1  代表  0 , 用-1代表 1。此时定义：设长为  p  的  $\boldsymbol{m}$  序列, 记作
 $$
-a_{1}, a_{2}, a_{3}, \ldots, a_{p}(p=2^{n-1}) \square
+a_{1}, a_{2}, a_{3}, \ldots, a_{p}(p=2^{n-1})
 $$
 经过  $\boldsymbol{j}$  次移位后,  $\boldsymbol{m}$  序列为
 $$
