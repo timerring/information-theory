@@ -70,14 +70,18 @@ k-bit 信息形成 $2^k$ 不同的信息序列 , 称为 k 元组。 n-bit 可以
 
 + **码率: (n-1)/ n**
 
-  $\begin{array}
+  
+  $$
+  \begin{array}
   \quad C=\left(C_{n-1}, C_{n-2}, \ldots, C_{1}, C_{0}\right) \Rightarrow C_{n-1} \oplus C_{n-2} \oplus \ldots \oplus C_{1} \oplus C_{0} \\
-  \end{array}$
+  \end{array}
+  $$
+  
 
-  =0 (偶校验)or 1(奇校验)
-
+  上式=0 (偶校验)or 1(奇校验)
+  
   可检测到**奇数**个错误图样, 如果错误个数为偶数则无法检测。
-
+  
   考虑(4，3）偶监督码
   
   ![](https://raw.githubusercontent.com/timerring/picgo/master/picbed/image-20230209145627351.png)
