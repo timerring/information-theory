@@ -66,29 +66,30 @@ k-bit 信息形成 $2^k$ 不同的信息序列 , 称为 k 元组。 n-bit 可以
 
 ### a.奇偶监督码
 
-+ 码字由 n 个码元组成， n - 1个信息码元，另**一码元**为奇（偶）监督码元 **(n, n-1)**奇偶监督码.
+码字由 n 个码元组成， n - 1个信息码元，另**一码元**为奇（偶）监督码元 **(n, n-1)**奇偶监督码.
 
-+ **码率: (n-1)/ n**
+**码率: (n-1)/ n**
 
-  
-  $$
-  \begin{array}
-  CC = (C_{n-1}, C_{n-2}, \ldots, C_{1}, C_{0}) \Rightarrow C_{n-1} \oplus C_{n-2} \oplus \ldots \oplus C_{1} \oplus C_{0} \\
-  \end{array}
-  $$
-  
 
-  上式=0 (偶校验)or 1(奇校验)
-  
-  可检测到**奇数**个错误图样, 如果错误个数为偶数则无法检测。
-  
-  考虑(4，3）偶监督码
-  
-  ![](https://raw.githubusercontent.com/timerring/picgo/master/picbed/image-20230209145627351.png)
-  
-  误码率：$P_{e}=C_{4}^{2} p^{2}(1-p)^{2}+C_{4}^{4} p=6 p^{2}(1-p)^{2}+p^{4}$
-  
-  若  p=0.001 , 则  $P_{e}=6 \times 10^{-6}$ 
+
+$$
+\begin{array}
+CC = (C_{n-1}, C_{n-2}, \ldots, C_{1}, C_{0}) \Rightarrow C_{n-1} \oplus C_{n-2} \oplus \ldots \oplus C_{1} \oplus C_{0} \\
+\end{array}
+$$
+
+
+上式=0 (偶校验)or 1(奇校验)
+
+可检测到**奇数**个错误图样, 如果错误个数为偶数则无法检测。
+
+考虑(4，3）偶监督码
+
+![](https://raw.githubusercontent.com/timerring/picgo/master/picbed/image-20230209145627351.png)
+
+误码率：$P_{e}=C_{4}^{2} p^{2}(1-p)^{2}+C_{4}^{4} p=6 p^{2}(1-p)^{2}+p^{4}$
+
+若  p=0.001 , 则  $P_{e}=6 \times 10^{-6}$ 
 
 ### b.恒比码
 
