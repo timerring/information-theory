@@ -262,6 +262,7 @@ $$
 用哈达马矩阵  $H_{N m} $ 的行 (或列)可以构成离散沃尔什函数  $W a l[i, t]$ , 它们的对应关系如下:
 
 
+
 $$
 \begin{array}{c}
 \operatorname{Wal}[i, t]=\sum_{k=1}^{N m} h_{i k} g(t-(k-1) T_{c}) \\
@@ -271,6 +272,8 @@ g(t)=\{\begin{array}{c}
 \end{array}.
 \end{array}
 $$
+
+
 
 
 
