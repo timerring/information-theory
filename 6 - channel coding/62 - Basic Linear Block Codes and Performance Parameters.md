@@ -73,7 +73,7 @@ k-bit 信息形成 $2^k$ 不同的信息序列 , 称为 k 元组。 n-bit 可以
   
   $$
   \begin{array}
-  \quad C=\left(C_{n-1}, C_{n-2}, \ldots, C_{1}, C_{0}\right) \Rightarrow C_{n-1} \oplus C_{n-2} \oplus \ldots \oplus C_{1} \oplus C_{0} \\
+  \quad C=(C_{n-1}, C_{n-2}, \ldots, C_{1}, C_{0}) \Rightarrow C_{n-1} \oplus C_{n-2} \oplus \ldots \oplus C_{1} \oplus C_{0} \\
   \end{array}
   $$
   
