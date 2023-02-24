@@ -61,7 +61,7 @@
 
 ### ChangeLog
 
-+ v2.0  230224
++ v2.0 Completed all chapter updates, corrected some formatting issues, officially open version 2.0 230224
 
 + v1.9 Completed chapter 9 update 230224
 
