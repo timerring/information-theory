@@ -25,7 +25,7 @@ $$
 >
 > 解:  
 > $$
-> c(x)=u(x) g(x)=\left(x^{2}+x\right)\left(x^{3}+x+1\right) 
+> c(x)=u(x) g(x)=(x^{2}+x)(x^{3}+x+1) 
 > 
 > =x^{5}+x^{4}+x^{3}+x
 > $$
@@ -44,7 +44,7 @@ $$
 
 ![](https://raw.githubusercontent.com/timerring/picgo/master/picbed/image-20230210134143802.png)
 $$
-g(x)=x^{4}+x^{3}+x^{2}+1 \Rightarrow 0011101
+g(x)=x^{4}+x^{3}+x^{2}+1 arrow 0011101
 $$
 (1) 生成多项式、生成矩阵
 
@@ -60,22 +60,22 @@ $$
 $$
 \begin{array}{l}
 g(x)=g_{n-k} x^{n-k}+g_{n-k-1} x^{n-k-1}+\cdots+g_{1} x+g_{0}, r=n-k \\
-C(x)=\mathbf{u G}(x)=\left(u_{k-1} u_{k-2} \cdots u_{0}\right) \mathbf{G}(x) \\
+C(x)=\mathbf{u G}(x)=(u_{k-1} u_{k-2} \cdots u_{0}) \mathbf{G}(x) \\
 =u_{k-1} x^{k-1} g(x)+u_{k-2} x^{k-2} g(x)+\cdots+u_{0} g(x) \\
-G(x)=\left[\begin{array}{c}
+G(x)=[\begin{array}{c}
 x^{k-1} g(x) \\
 x^{k-2} g(x) \\
 \vdots \\
 g(x)
-\end{array}\right] \Leftrightarrow G=\left[\begin{array}{ccccccccc}
+\end{array}] rightarrow G=[\begin{array}{ccccccccc}
 g_{r} & g_{r-1} & \cdots & g_{1} & g_{0} & 0 & 0 & \cdots & 0 \\
 0 & g_{r} & g_{r-1} & \cdots & g_{1} & g_{0} & 0 & \cdots & 0 \\
 & \vdots & & & & & \vdots & & \\
 0 & \cdots & 0 & 0 & g_{r} & g_{r-1} & \cdots & g_{1} & g_{0}
-\end{array}\right] \\
+\end{array}] \\
 \end{array}
 $$
-显然, 上式不符合  $\mathbf{G}=\left(\mathbf{I}_{k}: \mathbf{Q}\right)$  形式, 所以此生成矩阵不是典型形式。
+显然, 上式不符合  $\mathbf{G}=(\mathbf{I}_{k}: \mathbf{Q})$  形式, 所以此生成矩阵不是典型形式。
 
 ### 系统码生成矩阵的构造
 
@@ -84,8 +84,8 @@ $$
 \begin{array}{c}
 c(x)_{\bmod g(x)}=0 \\
 c(x)=u(x) \cdot x^{n-k}+r(x) \\
-\mathbf{0}=\left\{\left[u(x) x^{n-k}\right]_{\bmod g(x)}+r(x)\right\}
-\end{array} \quad \stackrel{r(x)}{=}\left[u(x) x^{n-k}\right] \bmod g(x)
+\mathbf{0}=\{[u(x) x^{n-k}]_{\bmod g(x)}+r(x)\}
+\end{array} \quad \stackrel{r(x)}{=}[u(x) x^{n-k}] \bmod g(x)
 $$
 (2) 系统循环码
 
@@ -101,7 +101,7 @@ b. 产生系统循环码式$\mathrm{c}(x)=x^{n-k} \mu(x)+r(x)$
 > $$
 > \begin{array}{l}
 > x^{n-k} u(x)=x^{4} u(x)=x^{14}+x^{11}+x^{8}+x^{5} \\
-> r(x)=\left[x^{4} u(x)\right] \bmod g(x)=x^{2} \\
+> r(x)=[x^{4} u(x)] \bmod g(x)=x^{2} \\
 > \therefore c(x)=x^{14}+x^{11}+x^{8}+x^{5}+x^{2} \\
 > c=10010010010(0100)监督位
 > \end{array}
@@ -121,19 +121,19 @@ b. 产生系统循环码式$\mathrm{c}(x)=x^{n-k} \mu(x)+r(x)$
 ### 系统码的循环码生成矩阵
 
 $$
-G(x)=\left[\begin{array}{c}
-x^{n-1}+\left(x^{n-1}\right)_{\bmod g(x)} \\
-x^{n-2}+\left(x^{n-2}\right)_{\bmod g(x)} \\
+G(x)=[\begin{array}{c}
+x^{n-1}+(x^{n-1})_{\bmod g(x)} \\
+x^{n-2}+(x^{n-2})_{\bmod g(x)} \\
 \vdots \\
-x^{n-i}+\left(x^{n-i}\right)_{\bmod g(x)} \\
+x^{n-i}+(x^{n-i})_{\bmod g(x)} \\
 \vdots \\
 g(x)
-\end{array}\right]=\left[\begin{array}{cccccccc}
+\end{array}]=[\begin{array}{cccccccc}
 1 & 0 & \cdots & 0 & r_{1,1} & r_{1,2} & \cdots & r_{1, n-k} \\
 0 & 1 & \cdots & 0 & r_{2,1} & r_{2,2} & \cdots & r_{2, n-k} \\
 \vdots & \vdots & & \vdots & \vdots & \vdots & & \vdots \\
 0 & 0 & \cdots & 1 & r_{k, 1} & r_{k, 2} & \cdots & r_{k, n-k}
-\end{array}\right]
+\end{array}]
 $$
 
 某  (7,4)  循环码的生成多项式是  $g(x)=x^{3}+x+1$ , 求系统码的生成矩阵。
@@ -141,15 +141,15 @@ $$
 解：
 $$
 \begin{array}{l}
-\left(x^{6}\right) \bmod g(x)=x^{2}+1 \\
-\left(x^{5}\right) \bmod g(x)=x^{2}+x+1 \\
-\left(x^{4}\right) \bmod g(x)=x^{2}+x
-\end{array} \quad \Rightarrow G=\left[\begin{array}{lllllll}
+(x^{6}) \bmod g(x)=x^{2}+1 \\
+(x^{5}) \bmod g(x)=x^{2}+x+1 \\
+(x^{4}) \bmod g(x)=x^{2}+x
+\end{array} \quad arrow G=[\begin{array}{lllllll}
 1 & 0 & 0 & 0 & 1 & 0 & 1 \\
 0 & 1 & 0 & 0 & 1 & 1 & 1 \\
 0 & 0 & 1 & 0 & 1 & 1 & 0 \\
 0 & 0 & 0 & 1 & 0 & 1 & 1
-\end{array}\right]
+\end{array}]
 $$
 
 ## 循环码的监督 (校验)  矩阵
@@ -160,25 +160,25 @@ a. 监督矩阵构造：由性质  $x^{n}+1=g(x) h(x)$ ;
 $$
 \begin{array}{l}
 h(x)=h_{k} x^{k}+h_{k-1} x^{k-1}+\ldots+h_{1} x+h_{0} \\
-H=\left[\begin{array}{ccccccc}
+H=[\begin{array}{ccccccc}
 h_{0} & h_{1} & \cdots & h_{k} & 0 & \cdots & 0 \\
 0 & h_{0} & h_{1} & \cdots & h_{k} & \cdots & 0 \\
 & \vdots & & & & \vdots & \\
 0 & 0 & \cdots & h_{0} & h_{1} & \cdots & h_{k}
-\end{array}\right] \\
+\end{array}] \\
 \end{array}
 $$
 b. 利用循环码的特点来确定监督矩阵  H  :
 
 由于  (n, k)  循环码中  g(x)  是  $x^{n+1}$  的因式, 因此可令:  $h(x)=\frac{x^{n}+1}{g(x)}=h_{k} x^{k}+h_{k-1} x^{k-1}+\cdots+h_{1} x+h_{0}$  监督矩阵表示为:
 $$
-H(x)=\left[\begin{array}{c}
+H(x)=[\begin{array}{c}
 x^{n-k-1} h^{*}(x) \\
 x^{n-k-2} h^{*}(x) \\
 \vdots \\
 x h^{*}(x) \\
 h^{*}(x)
-\end{array}\right]
+\end{array}]
 $$
 
 $$

@@ -32,17 +32,17 @@
 
 定义: 设  $\mathrm{C}$  是某  ($\boldsymbol{n}, \boldsymbol{k}$)  线性分组码的码字集合, 如果对任何
 $$
-\mathbf{c}=\left(c_{n-1}, c_{n-2}, \cdots, c_{0}\right) \in \mathbf{C}
+\mathbf{c}=(c_{n-1}, c_{n-2}, \cdots, c_{0}) \in \mathbf{C}
 $$
 它的循环移位(左移)
 $$
-\mathbf{c}^{(1)}=\left(c_{n-2}, c_{n-3}, \cdots, c_{0}, c_{n-1}\right)
+\mathbf{c}^{(1)}=(c_{n-2}, c_{n-3}, \cdots, c_{0}, c_{n-1})
 $$
 也属于  $\mathrm{C}$ , 则称该  ($\boldsymbol{n}, \boldsymbol{k}$)  码为循环码。
 
 同理, 左移  i  位
 $$
-\mathbf{c}^{(i)}=\left(c_{n-i-1}, c_{n-i-2}, \cdots, c_{0}, c_{n-1}, \ldots, c_{n-i}\right)
+\mathbf{c}^{(i)}=(c_{n-i-1}, c_{n-i-2}, \cdots, c_{0}, c_{n-1}, \ldots, c_{n-i})
 $$
 仍是这个循环码的一个码字。
 
@@ -62,19 +62,24 @@ $$
 
 对任意一个长为  $n$  的码字
 $$
-\mathbf{c}=\left(c_{n-1}, c_{n-2}, \cdots, c_{1}, c_{0}\right) \in \mathbf{C}
+\mathbf{c}=(c_{n-1}, c_{n-2}, \cdots, c_{1}, c_{0}) \in \mathbf{C}
 $$
 可用一多项式来表示, 称其为码多项式:
 $$
 c(x)=c_{n-1} x^{n-1}+c_{n-2} x^{n-2}+\cdots+c_{1} x+c_{0}
 $$
 
+
+
+
 $$
 \begin{array}{l}
-\mathrm{C}=\left(c_{n-1}, c_{n-2}, \ldots, c_{1}, c_{0}\right) \\
-<C(x)=c_{n-1} x^{n-1}+c_{n-2} x^{n-2}+\ldots+c_{1} x+c_{0}
+\mathrm{C}=(c_{n-1}, c_{n-2}, \ldots, c_{1}, c_{0}) \\
+\lt C(x)=c_{n-1} x^{n-1}+c_{n-2} x^{n-2}+\ldots+c_{1} x+c_{0}
 \end{array}
 $$
+
+
 
  $\boldsymbol{c}_{i}$  是多项式的系数, 一切系数的运算均是在  $\boldsymbol{G F}(2)$  上的运算。
 
@@ -90,28 +95,28 @@ $$
 $$
 \begin{array}{l}
 u(x)=u_{2} x^{2}+u_{1} x+u_{0}, g(x)=g_{1} x+g_{0} \\
-u(x)+g(x)=\left(u_{2}+0\right) x^{2}+\left(u_{1}+g_{1}\right) x+\left(u_{0}+g_{0}\right)
+u(x)+g(x)=(u_{2}+0) x^{2}+(u_{1}+g_{1}) x+(u_{0}+g_{0})
 \end{array}
 $$
 乘法
 $$
 \begin{array}{l}
 u(x) g(x) \\
-=u_{2} g_{1} x^{3}+\left(u_{2} g_{0}+u_{1} g_{1}\right) x^{2}+\left(u_{1} g_{0}+u_{0} g_{1}\right) x+u_{0} g_{0}
+=u_{2} g_{1} x^{3}+(u_{2} g_{0}+u_{1} g_{1}) x^{2}+(u_{1} g_{0}+u_{0} g_{1}) x+u_{0} g_{0}
 \end{array}
 $$
 写成矩阵形式
 $$
-c=\left(u_{2}, u_{1}, u_{0}\right)\left(\begin{array}{llll}
+c=(u_{2}, u_{1}, u_{0})(\begin{array}{llll}
 g_{1} & g_{0} & 0 & 0 \\
 0 & g_{1} & g_{0} & 0 \\
 0 & 0 & g_{1} & g_{0}
-\end{array}\right)=\left(u_{2} g_{1},\left(u_{2} g_{0}+u_{1} g_{1}\right),\left(u_{1} g_{0}+u_{0} g_{1}\right), u_{0} g_{0}\right)
+\end{array})=(u_{2} g_{1},(u_{2} g_{0}+u_{1} g_{1}),(u_{1} g_{0}+u_{0} g_{1}), u_{0} g_{0})
 $$
 例:  
 $$
 \begin{array}{l}
-\left(x^{6}+x^{2}+1\right)+\left(x^{3}+x^{2}\right)\\
+(x^{6}+x^{2}+1)+(x^{3}+x^{2})\\
 =x^{6}+x^{3}+(1+1) x^{2}+1 \\
 =x^{6}+x^{3}+1
 \end{array}
@@ -120,15 +125,15 @@ $$
 $$
 \begin{array}{c}
 (x+1)^{2}=x^{2}+1 \\
-(x+1)\left(x^{3}+x+1\right)\left(x^{3}+x^{2}+1\right)=x^{7}+1 \\
-(x+1)\left(x^{n-1}+x^{n-2}+\cdots+x+1\right)=x^{n}+1
+(x+1)(x^{3}+x+1)(x^{3}+x^{2}+1)=x^{7}+1 \\
+(x+1)(x^{n-1}+x^{n-2}+\cdots+x+1)=x^{n}+1
 \end{array}
 $$
 
 
 ### 多项式的模运算
 
-模  $\mathbf{N}$  运算：  $M / N=Q+R / N \quad 0 \leq R<N$ ; 其中  M, N  为 正 整数,  $\mathbf{Q}$  为整数, 则在模  $\mathbf{N}$  运算下, 有  $M \equiv \mathbf{R}$  （模  $\mathbf{N} $, 记为  $\bmod \mathbf{N}$  )
+模  $\mathbf{N}$  运算：  $M / N=Q+R / N \quad 0 \leq R \lt N$ ; 其中  M, N  为 正 整数,  $\mathbf{Q}$  为整数, 则在模  $\mathbf{N}$  运算下, 有  $M \equiv \mathbf{R}$  （模  $\mathbf{N} $, 记为  $\bmod \mathbf{N}$  )
 
 例 :  $14 \equiv 2(\bmod 12)$, $1+1=2 \equiv 0 (mod 2)$, $3+2=5   \equiv 1(\bmod 2)$, $5 \times 4=20 \equiv 0(\bmod 2)$ 
 
@@ -155,10 +160,18 @@ $$
 > 计算过程省略：$r(x) = x^2 + 1$
 
 对于任意多项式  a(x) 、 b(x)  和  p(x) , 可以证明
+
+
 $$
-\left\{b(x)[a(x)]_{\bmod p(x)}\right\}_{\bmod p(x)}=[b(x) \cdot a(x)]_{\bmod p(x)}
+\{b(x)[a(x)]_{\bmod p(x)}\}_{\bmod p(x)}=[b(x) \cdot a(x)]_{\bmod p(x)}
 $$
+
+
+
 若：
+
+
+
 $$
 \begin{array}{c}
 a(x)=x^{7}+x+1 \\
@@ -166,46 +179,50 @@ b(x)=x^{2}+1 \\
 p(x)=x^{3}+x+1
 \end{array}
 $$
+
+
 请验证上式。余式=1。
 
 
 
 对于  (n, k)  循环码, 若  c(x)  对应码字
 $$
-\mathbf{c}=\left(c_{n-1}, c_{n-2}, \ldots, c_{1}, c_{0}\right),
+\mathbf{c}=(c_{n-1}, c_{n-2}, \ldots, c_{1}, c_{0}),
 $$
 
 
 
 
- $\boldsymbol{c}^{(1)}(\boldsymbol{x})$  对应  $\boldsymbol{c}$  的一次移位  $\mathbf{c}^{(1)}=\left(c_{n-2}, \ldots, c_{1}, c_{0}, c_{n-1}\right)$ , 对  $c^{(i)}(x)$  对应  c  的  i  次移位  $c^{(i)}$  ，则
+ $\boldsymbol{c}^{(1)}(\boldsymbol{x})$  对应  $\boldsymbol{c}$  的一次移位  $\mathbf{c}^{(1)}=(c_{n-2}, \ldots, c_{1}, c_{0}, c_{n-1})$ , 对  $c^{(i)}(x)$  对应  c  的  i  次移位  $c^{(i)}$  ，则
 $$
 \begin{array}{c}
-c^{(1)}(x)=[x c(x)] \bmod \left(x^{n}+1\right) \\
-c^{(i)}(x)=\left[x^{i} c(x)\right] \bmod \left(x^{n}+1\right)
+c^{(1)}(x)=[x c(x)] \bmod (x^{n}+1) \\
+c^{(i)}(x)=[x^{i} c(x)] \bmod (x^{n}+1)
 \end{array}
 $$
 证：
+
+
 $$
 \begin{array}{l}
-c^{(1)}(x)=[x c(x)] \bmod \left(x^{n}+1\right) \text {, } \\
-c^{(i)}(x)=\left[x^{i} c(x)\right] \bmod \left(x^{n}+1\right) \\
+c^{(1)}(x)=[x c(x)] \bmod (x^{n}+1) \text {, } \\
+c^{(i)}(x)=[x^{i} c(x)] \bmod (x^{n}+1) \\
 c(x)=c_{n-1} x^{n-1}+c_{n-2} x^{n-2}+\cdots+c_{1} x+c_{0} \\
 x c(x)=c_{n-1} x^{n}+c_{n-2} x^{n-1}+\cdots+c_{1} x^{2}+c_{0} x \\
 =c_{n-1} x^{n}+c_{n-2} x^{n-1}+\cdots+c_{1} x^{2}+c_{0} x+c_{n-1}+c_{n-1} \\
-=c_{n-1}\left(x^{n}+1\right)+c^{(1)}(x) \\
-\Rightarrow[x c(x)]_{\bmod \left(x^{n}+1\right)}=\left[c_{n-1}\left(x^{n}+1\right)+c^{(1)}(x)\right]_{\bmod \left(x^{n}+1\right)} \\
+=c_{n-1}(x^{n}+1)+c^{(1)}(x) \\
+arrow[x c(x)]_{\bmod (x^{n}+1)}=[c_{n-1}(x^{n}+1)+c^{(1)}(x)]_{\bmod (x^{n}+1)} \\
 =c^{(1)}(x) \\
 \end{array}
 $$
+
+
 
 > 例  (7,4)  循环码的第 12 个码字  $c_{12}$  的码多项式 为  $C(x)=x^{6}+x^{4}+x^{3}$ , 写出左循环移位 3 次的码字。
 >
 > 解:  $i=3, x^{3} C(x)=x^{9}+x^{7}+x^{6}$ , 与  $x^{7}+1$  作除法, 得  $C^{(3)}(x)=x^{6}+x^{2}+1$  。对应码字 1000101 。
 >
 > 另: 由简单移位给出, 原始码字 1011000 , 左移三位为: 1000101 。
-
-
 
 
 
