@@ -38,7 +38,8 @@ $n(t)$  独立于$s_{i}(t)$  。
 
 $s_{o}(t)=f[s_{i}(t)]$  实际反映了物理信道的特性,  $f[s_{i}(t)]$  可以表示成**信道单位冲激响应与输入信号的卷积**, 也即  $f[s_{i}(t).  ]$反映信道的特性, 可以表示为:
 $$
-s_{0}(t)=f[s_{i}(t)]=h(t) * s_{i}(t) \& \boldsymbol{S}_{\boldsymbol{o}}(\boldsymbol{f})=\boldsymbol{H}(\boldsymbol{f}) \boldsymbol{S}_{\boldsymbol{i}}(\boldsymbol{f})
+s_{0}(t)=f[s_{i}(t)]=h(t) * s_{i}(t) \\ 
+\boldsymbol{S}_{\boldsymbol{o}}(\boldsymbol{f})=\boldsymbol{H}(\boldsymbol{f}) \boldsymbol{S}_{\boldsymbol{i}}(\boldsymbol{f})
 $$
 $ H(f) $依赖于信道的特性, 可以看成是乘性千扰。
 

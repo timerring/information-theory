@@ -72,10 +72,16 @@ $$
 ### 信道容量
 
 最大的信息传输率, 单位 bit/symbol
+
+
 $$
 C=\max _{p(\boldsymbol{x}_{i})} I(X ; Y)
 $$
+
+
 单位时间的信道容量, 单位 bit/s:
+
+
 $$
 C=\frac{1}{T} \max _{p(x_{i})} I(X ; Y)
 $$
@@ -300,23 +306,31 @@ $$
 信道输入信号为平稳随机过程  $X(t)$ , 加性干扰为  $n(t)$ , 输出为  $Y(t)=X(t)+n(t)$  。输入信号功率受限, 即  $E[X^{2}(t)] \leq S$  。
 
 限带信道的频率特性:
+
+
 $$
 H(f)=\{\begin{array}{ll}
 1, & |f|<B \\
 0, & |f|>B
 \end{array}.
 $$
+
+
 $ Y(t), X(t), n(t)$  的带宽为  B , 以  2B  采样，得  $Y(t_{1}), Y(t_{2}), \ldots$ ,
 $ Y(t_{n}), \ldots, Y(t_{L}) \ldots, X(t_{1}), X(t_{2}), \ldots, X(t_{n}), \ldots, X(t_{L}) \ldots, n(t_{1}), n(t_{2}), \ldots ,
  n(t_{n}), \ldots, n(t_{L}) \ldots$  。时刻  $t_{n}, Y(t_{n})=X(t_{n})+n(t_{n})$  。
 
 由单符号高斯信道容量公式可得
+
+
 $$
 \begin{aligned}
 C & =\max _{p(x)}[I(X(t_{n}), Y(t_{n}), p(x))] \\
 & =\frac{1}{2} \log (1+\frac{s}{\sigma^{2}})
 \end{aligned}
 $$
+
+
 上式中  $\frac{S}{\sigma^{2}}$  为信号功率与噪声功率的比, 也即信噪比 , 其中  $S=E[X^{2}(t_{n})], \sigma^{2}=E[n^{2}(t_{n})]$  。
 
 #### 单符号信号一>多符号多维信道
@@ -341,17 +355,21 @@ C=\frac{C_{T}}{T}=B \log (1+\frac{S}{\sigma^{2}})
 $$
 **限频、限功率高斯信道的信道容量公式, 也即 Shannon公式。**
 
-香农公式的另一种表达: 因为  $\lim _{x arrow 0} \frac{1}{x} \log (1+x)=\log _{2} e \approx 1.44 $, 所以 $ \lim _{B arrow \infty} C \approx 1.44 \frac{S}{N_{0}}$  。  
+香农公式的另一种表达: 因为  $\lim _{x arrow 0} \frac{1}{x} \log (1+x)=\log _{2} e \approx 1.44 $, 所以 $\lim _{B arrow \infty} C \approx 1.44 \frac{S}{N_{0}}$  。  
 
 $C=B \log (1+\frac{S}{N_{0} B}) b i t / s, N_{0}$  为限带高斯白噪声  n(t)  的单边功率谱密度。
 
 当  $S arrow \infty$  时,  $C arrow \infty$ ; 当 $ B arrow \infty$  时,  $C arrow$  一确定值。
+
+
 $$
 \begin{array}{c}
 C=B \log (1+\frac{S}{N_{0} B})=\frac{S}{N_{0}} \frac{N_{0} B}{S} \log (1+\frac{S}{N_{0} B}) \\
 \lim _{B arrow \infty} C=\frac{S}{N_{0}} \lim _{B arrow \infty}[\frac{N_{0} B}{S} \log (1+\frac{S}{N_{0} B})] \approx 1.44 \frac{S}{N_{0}}
 \end{array}
 $$
+
+
 当  $C_{\infty}=1 \mathrm{bit} / \mathrm{s}$ ,有  $\frac{P_{s}}{N_{0}}=\ln 2=0.693 \sim-1.6 d B$ ,即带宽不受限制时, 传输1bit信息, 信噪比最低只需要-1.6dB, 这是加性高斯噪声信道信息传输速率的极限值, 是一切编码方式所能达到的理论极限。
 
 $\gamma=\frac{C_{t}}{W}=\log (1+S N R) b p s / H z$--  单位频带的信息传输速率（频带利用率）。

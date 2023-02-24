@@ -56,7 +56,7 @@ $$
 
 #### 1.平坦性衰落
 
-满足:  $|\tau_{i}(t)|_{\max } \ll T$, $T $ 为码元周期, 且  $|\tau_{i}(t)|_{\max } \sim 1 / f_{c}$   $b(t-\tau_{i}(t)) \approx b(t-\overline{\tau(t)}), i=1,2, \ldots, L $, 其中  $\overline{\tau(t)}$  为  $\tau_{i}(t)$  的数学期望。
+满足:  $|\tau_{i}(t)|_{\max } \ll T$ ,  $T$ 为码元周期, 且  $|\tau_{i}(t)|_{\max } \sim 1 / f_{c}$  ,  $b(t-\tau_{i}(t)) \approx b(t-\overline{\tau(t)}), i=1,2, \ldots, L $, 其中  $\overline{\tau(t)}$  为  $\tau_{i}(t)$  的数学期望。
 $$
 \begin{aligned}
 r(t) &=A \sum_{i=1}^{L} u_{i}(t) b\left(t-\tau_{i}(t)\right) \cos \varphi_{i}(t) \cos 2 \pi f_{c} t-A \sum_{i=1}^{L} u_{i}(t) b\left(t-\tau_{i}(t)\right) \sin \varphi_{i}(t) \sin 2 \pi f_{c} t \\
@@ -107,7 +107,7 @@ $$
 
 #### 2.频率选择性衰落
 
-若信道时延  $|\tau_{i}(t)|_{\max }>T$ , 则  $\boldsymbol{b}(\boldsymbol{t}-\boldsymbol{\tau}_{\boldsymbol{i}}(\boldsymbol{t}))$  不能近似为  $\boldsymbol{b}(\boldsymbol{t}-\overline{\boldsymbol{\tau}(\boldsymbol{t})})$  。
+若信道时延  $|\tau_{i}(t)|_{\max }>T$ ,  则   $\boldsymbol{b}(\boldsymbol{t}-\boldsymbol{\tau}_{\boldsymbol{i}}(\boldsymbol{t}))$  不能近似为  $\boldsymbol{b}(\boldsymbol{t}-\overline{\boldsymbol{\tau}(\boldsymbol{t})})$  。
 
 干扰可存在于不同码元。
 
@@ -164,7 +164,7 @@ $$
 
 时域:
 
- -  信道时延  $|\tau_{i}(t)|_{\max } \ll T$  (T为信号码元周期), 且  $|\tau_{i}(t)|_{\max } \sim 1 / f_{c}$ , 信号遭受平坦衰落。接收信号的幅度特性符合瑞利分布或莱斯分布。
+ -  信道时延  $|\tau_{i}(t)|_{\max } \ll T$   (T为信号码元周期) ,  且   $|\tau_{i}(t)|_{\max } \sim 1 / f_{c}$  , 信号遭受平坦衰落。接收信号的幅度特性符合瑞利分布或莱斯分布。
 - 信道时延  $|\tau_{i}(t)|_{\max }>T$ , 频率选择性衰落。
 
  频域:

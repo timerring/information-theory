@@ -48,10 +48,16 @@ $$
 ### 带通信号的复包络无失真
 
 若带通系统的等效基带系统能使输入输出的复包络满足无失真关系，即
+
+
 $$
 y_{L}(t)=K x_{L}\left(t-t_{0}\right)
 $$
+
+
 其中  K  是任意常数, 则称此带通系统对复包络无失真。 复包络无失真要求:
+
+
 $$
 \begin{aligned}
 H(f)=&\{\begin{array}{c}
@@ -65,7 +71,11 @@ a e^{-j(2 \pi f t_{0}+\theta), f<0}
 & \tau_{\mathrm{G}}(f)=-\frac{1}{2 \pi} \frac{d \varphi(f)}{d f}=t_{0}, f>0
 \end{aligned}
 $$
+
+
 例如最经典的希尔伯特变换器:
+
+
 $$
 \begin{array}{c}
 H(f)=-j \operatorname{sgn}(f)=\left\{\begin{array}{ll}
@@ -76,11 +86,19 @@ e^{j \frac{\pi}{2}}, & f<0
 \tau_{\mathrm{G}}(f)=-\frac{1}{2 \pi} \frac{d \varphi(f)}{d f}=0, f>0
 \end{array}
 $$
+
+
 带通信号
+
+
 $$
 x(t)=m(t) \cos 2 \pi f_{c} t-s(t) \sin 2 \pi f_{c} t \rightarrow x_{L}(t)=m(t)+j s(t)
 $$
+
+
 经过Hilbert 变换器后有
+
+
 $$
 \begin{array}{l}
 \hat{x}(t)=s(t) \cos 2 \pi f_{c} t+m(t) \sin 2 \pi f_{c} t \rightarrow \hat{x}_{L}(t)=s(t)-j m(t) \\
