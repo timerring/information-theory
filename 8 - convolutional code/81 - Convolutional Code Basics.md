@@ -8,7 +8,7 @@
     - [4、网格图（The trellis Diagram）](#4网格图the-trellis-diagram)
 
 
-# 卷积码
+# 卷积码基础
 
 分组码—无记忆编码
 
