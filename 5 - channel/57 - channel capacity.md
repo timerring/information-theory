@@ -59,8 +59,8 @@ $$
 接收到符号  $\mathrm{Y} $ 后平均每个符号获得的关于  $\mathrm{X}$  的信息量。
 $$
 \begin{array}{l}
-I(X ; Y)=\sum_{i} \sum_{j} p\left(x_{i}\right) p\left(y_{j} \mid x_{i}\right) \log \frac{p\left(y_{j} \mid x_{i}\right)}{p\left(y_{j}\right)} \\
-p\left(y_{j}\right)=\sum_{i=1}^{n} p\left(x_{i}\right) p\left(y_{j} \mid x_{i}\right)
+I(X ; Y)=\sum_{i} \sum_{j} p(x_{i}) p(y_{j} \mid x_{i}) \log \frac{p(y_{j} \mid x_{i})}{p(y_{j})} \\
+p(y_{j})=\sum_{i=1}^{n} p(x_{i}) p(y_{j} \mid x_{i})
 \end{array}
 $$
 定理：
@@ -73,11 +73,11 @@ $$
 
 最大的信息传输率, 单位 bit/symbol
 $$
-C=\max _{p\left(\boldsymbol{x}_{i}\right)} I(X ; Y)
+C=\max _{p(\boldsymbol{x}_{i})} I(X ; Y)
 $$
 单位时间的信道容量, 单位 bit/s:
 $$
-C=\frac{1}{T} \max _{p\left(x_{i}\right)} I(X ; Y)
+C=\frac{1}{T} \max _{p(x_{i})} I(X ; Y)
 $$
 
 ## 三种特殊信道的容量
@@ -128,29 +128,29 @@ $$
 
 设二进制对称信道的输入概率空间为
 $$
-\left[\begin{array}{l}
+[\begin{array}{l}
 X \\
 P
-\end{array}\right]=\left[\begin{array}{cc}
+\end{array}]=[\begin{array}{cc}
 0 & 1 \\
 \omega & \bar{\omega}
-\end{array}\right]
+\end{array}]
 $$
 信道矩阵:
 $$
-P=\left[\begin{array}{cc}
+P=[\begin{array}{cc}
 1-p & p \\
 p & 1-p
-\end{array}\right]=\left[\begin{array}{ll}
+\end{array}]=[\begin{array}{ll}
 \bar{p} & p \\
 p & \bar{p}
-\end{array}\right]
+\end{array}]
 $$
 ![](https://raw.githubusercontent.com/timerring/picgo/master/picbed/image-20230208213436225.png)
 $$
 \begin{array}{l}
-p(y=0)=\sum_{i=0}^{1} p\left(x_{i}\right) p\left(y_{0} \mid x_{i}\right)=\omega \bar{p}+\bar{\omega} p \\
-p(y=1)=\sum_{i=0}^{1} p\left(x_{i}\right) p\left(y_{1} \mid x_{i}\right)=\omega p+\bar{\omega} \bar{p} \\
+p(y=0)=\sum_{i=0}^{1} p(x_{i}) p(y_{0} \mid x_{i})=\omega \bar{p}+\bar{\omega} p \\
+p(y=1)=\sum_{i=0}^{1} p(x_{i}) p(y_{1} \mid x_{i})=\omega p+\bar{\omega} \bar{p} \\
 H(Y) \\
 =(\omega \bar{p}+\bar{\omega} p) \log \frac{1}{\omega \bar{p}+\bar{\omega} p}+(\omega p+\bar{\omega} \bar{p}) \log \frac{1}{\omega p+\bar{\omega} \bar{p}} \\
 =H(\omega \bar{p}+\bar{\omega} p)
@@ -159,8 +159,8 @@ $$
 
 $$
 \begin{array}{l}
-H(Y \mid X)=-\sum_{i} p\left(x_{i}\right) \sum_{j} p\left(y_{j} \mid x_{i}\right) \log p\left(y_{j} \mid x_{i}\right) \\
-=-\sum_{j} p\left(y_{j} \mid x_{i}\right) \log p\left(y_{j} \mid x_{i}\right)=-[p \log p+\bar{p} \log p] \\
+H(Y \mid X)=-\sum_{i} p(x_{i}) \sum_{j} p(y_{j} \mid x_{i}) \log p(y_{j} \mid x_{i}) \\
+=-\sum_{j} p(y_{j} \mid x_{i}) \log p(y_{j} \mid x_{i})=-[p \log p+\bar{p} \log p] \\
 =H(p) \\
 I(X ; Y)=H(Y)-H(Y \mid X)=H(\omega \bar{p}+\bar{\omega} p)-H(p) \\
 \leq 1-H(p)
@@ -186,7 +186,7 @@ BSC 信道容量  $C=1-H(p) $
 + 当  $\boldsymbol{p}=\mathbf{0}$ ,
   $C=1-0=1  bit  =H(X) $   (信道无噪声)
 + 当  $p=1 / 2$ ,
-  $C=1-H\left(\frac{1}{2}, \frac{1}{2}\right)=0 $    (信道强噪声)
+  $C=1-H(\frac{1}{2}, \frac{1}{2})=0 $    (信道强噪声)
 
 ![](https://raw.githubusercontent.com/timerring/picgo/master/picbed/image-20230208214210353.png)
 
@@ -269,7 +269,7 @@ $$
 
 输入为连续随机变量  $X \in(-\infty, \infty)$ ,输出为  $Y=X+n$, $n$  : 均值为 0 , 方差为  $\sigma^{2}$  的高斯变量, 与  X  统计独立。由条件概率可知, 当  X  已知时,  Y  也为正态变量, 均值为 0 , 方差为  $\sigma^{2}$ ,
 $$
-p(y \mid x)=\frac{1}{\sqrt{2 \pi \sigma^{2}}} \exp \left[-\frac{1}{2 \sigma^{2}}(y-x)^{2}\right]
+p(y \mid x)=\frac{1}{\sqrt{2 \pi \sigma^{2}}} \exp [-\frac{1}{2 \sigma^{2}}(y-x)^{2}]
 $$
 
 $$
@@ -291,72 +291,72 @@ P_{W o}=P_{W i}+\sigma^{2}
 $$
 使  H(Y)  最大的  Y  是均值为 0 的正态分布随机变量。而由  $Y=X+n$  可知,  $X$  也应该为均值为零方差为  $P_{W_{i}}$  的随机变量。所以
 $$
-C=\log \sqrt{2 \pi e P_{W o}}-\log \sqrt{2 \pi e \sigma^{2}}=\frac{1}{2} \log \frac{P_{W o}}{\sigma^{2}}=\frac{1}{2} \log \left(1+\frac{P_{W i}}{\sigma^{2}}\right)
+C=\log \sqrt{2 \pi e P_{W o}}-\log \sqrt{2 \pi e \sigma^{2}}=\frac{1}{2} \log \frac{P_{W o}}{\sigma^{2}}=\frac{1}{2} \log (1+\frac{P_{W i}}{\sigma^{2}})
 $$
 如不限制输入信号,  $H(\boldsymbol{H})$ 、 $P_{W_{o}}$  可趋于无限, 此时信道容量无限大一一实际不可行。
 
 #### 限频、限功率高斯信道的容量
 
-信道输入信号为平稳随机过程  $X(t)$ , 加性干扰为  $n(t)$ , 输出为  $Y(t)=X(t)+n(t)$  。输入信号功率受限, 即  $E\left[X^{2}(t)\right] \leq S$  。
+信道输入信号为平稳随机过程  $X(t)$ , 加性干扰为  $n(t)$ , 输出为  $Y(t)=X(t)+n(t)$  。输入信号功率受限, 即  $E[X^{2}(t)] \leq S$  。
 
 限带信道的频率特性:
 $$
-H(f)=\left\{\begin{array}{ll}
+H(f)=\{\begin{array}{ll}
 1, & |f|<B \\
 0, & |f|>B
-\end{array}\right.
+\end{array}.
 $$
-$ Y(t), X(t), n(t)$  的带宽为  B , 以  2B  采样，得  $Y\left(t_{1}\right), Y\left(t_{2}\right), \ldots$ ,
-$ Y\left(t_{n}\right), \ldots, Y\left(t_{L}\right) \ldots, X\left(t_{1}\right), X\left(t_{2}\right), \ldots, X\left(t_{n}\right), \ldots, X\left(t_{L}\right) \ldots, n\left(t_{1}\right), n\left(t_{2}\right), \ldots ,
- n\left(t_{n}\right), \ldots, n\left(t_{L}\right) \ldots$  。时刻  $t_{n}, Y\left(t_{n}\right)=X\left(t_{n}\right)+n\left(t_{n}\right)$  。
+$ Y(t), X(t), n(t)$  的带宽为  B , 以  2B  采样，得  $Y(t_{1}), Y(t_{2}), \ldots$ ,
+$ Y(t_{n}), \ldots, Y(t_{L}) \ldots, X(t_{1}), X(t_{2}), \ldots, X(t_{n}), \ldots, X(t_{L}) \ldots, n(t_{1}), n(t_{2}), \ldots ,
+ n(t_{n}), \ldots, n(t_{L}) \ldots$  。时刻  $t_{n}, Y(t_{n})=X(t_{n})+n(t_{n})$  。
 
 由单符号高斯信道容量公式可得
 $$
 \begin{aligned}
-C & =\max _{p(x)}\left[I\left(X\left(t_{n}\right), Y\left(t_{n}\right), p(x)\right)\right] \\
-& =\frac{1}{2} \log \left(1+\frac{s}{\sigma^{2}}\right)
+C & =\max _{p(x)}[I(X(t_{n}), Y(t_{n}), p(x))] \\
+& =\frac{1}{2} \log (1+\frac{s}{\sigma^{2}})
 \end{aligned}
 $$
-上式中  $\frac{S}{\sigma^{2}}$  为信号功率与噪声功率的比, 也即信噪比 , 其中  $S=E\left[X^{2}\left(t_{n}\right)\right], \sigma^{2}=E\left[n^{2}\left(t_{n}\right)\right]$  。
+上式中  $\frac{S}{\sigma^{2}}$  为信号功率与噪声功率的比, 也即信噪比 , 其中  $S=E[X^{2}(t_{n})], \sigma^{2}=E[n^{2}(t_{n})]$  。
 
 #### 单符号信号一>多符号多维信道
 
-$X_{L}, Y_{L}$  分别表示  L  个抽样  $X\left(t_{n}\right), Y\left(t_{n}\right)  (n=1,2, \ldots, L)$  的  L  维向量, 则对多符号信道
+$X_{L}, Y_{L}$  分别表示  L  个抽样  $X(t_{n}), Y(t_{n})  (n=1,2, \ldots, L)$  的  L  维向量, 则对多符号信道
 $$
-I\left(X_{L}, Y_{L}\right) \leq \frac{L}{2} \log \left(1+\frac{S}{\sigma^{2}}\right)
+I(X_{L}, Y_{L}) \leq \frac{L}{2} \log (1+\frac{S}{\sigma^{2}})
 $$
-当  $X\left(t_{n}\right), Y\left(t_{n}\right)$  统计独立时
+当  $X(t_{n}), Y(t_{n})$  统计独立时
 $$
-\max \left[I\left(X_{L}, Y_{L}\right)\right]=\frac{L}{2} \log \left(1+\frac{S}{\sigma^{2}}\right)
+\max [I(X_{L}, Y_{L})]=\frac{L}{2} \log (1+\frac{S}{\sigma^{2}})
 $$
 
 
  T  时间内抽样数  L=2BT , 则信道传输最大信息量
 $$
-C_{T}=B T \log \left(1+\frac{S}{\sigma^{2}}\right)
+C_{T}=B T \log (1+\frac{S}{\sigma^{2}})
 $$
 对连续信道, 定义单位时间内传送的最大信息量为信道容量
 $$
-C=\frac{C_{T}}{T}=B \log \left(1+\frac{S}{\sigma^{2}}\right)
+C=\frac{C_{T}}{T}=B \log (1+\frac{S}{\sigma^{2}})
 $$
 **限频、限功率高斯信道的信道容量公式, 也即 Shannon公式。**
 
-香农公式的另一种表达: 因为  $\lim _{x \rightarrow 0} \frac{1}{x} \log (1+x)=\log _{2} e \approx 1.44 $, 所以 $ \lim _{B \rightarrow \infty} C \approx 1.44 \frac{S}{N_{0}}$  。  
+香农公式的另一种表达: 因为  $\lim _{x arrow 0} \frac{1}{x} \log (1+x)=\log _{2} e \approx 1.44 $, 所以 $ \lim _{B arrow \infty} C \approx 1.44 \frac{S}{N_{0}}$  。  
 
-$C=B \log \left(1+\frac{S}{N_{0} B}\right) b i t / s, N_{0}$  为限带高斯白噪声  n(t)  的单边功率谱密度。
+$C=B \log (1+\frac{S}{N_{0} B}) b i t / s, N_{0}$  为限带高斯白噪声  n(t)  的单边功率谱密度。
 
-当  $S \rightarrow \infty$  时,  $C \rightarrow \infty$ ; 当 $ B \rightarrow \infty$  时,  $C \rightarrow$  一确定值。
+当  $S arrow \infty$  时,  $C arrow \infty$ ; 当 $ B arrow \infty$  时,  $C arrow$  一确定值。
 $$
 \begin{array}{c}
-C=B \log \left(1+\frac{S}{N_{0} B}\right)=\frac{S}{N_{0}} \frac{N_{0} B}{S} \log \left(1+\frac{S}{N_{0} B}\right) \\
-\lim _{B \rightarrow \infty} C=\frac{S}{N_{0}} \lim _{B \rightarrow \infty}\left[\frac{N_{0} B}{S} \log \left(1+\frac{S}{N_{0} B}\right)\right] \approx 1.44 \frac{S}{N_{0}}
+C=B \log (1+\frac{S}{N_{0} B})=\frac{S}{N_{0}} \frac{N_{0} B}{S} \log (1+\frac{S}{N_{0} B}) \\
+\lim _{B arrow \infty} C=\frac{S}{N_{0}} \lim _{B arrow \infty}[\frac{N_{0} B}{S} \log (1+\frac{S}{N_{0} B})] \approx 1.44 \frac{S}{N_{0}}
 \end{array}
 $$
 当  $C_{\infty}=1 \mathrm{bit} / \mathrm{s}$ ,有  $\frac{P_{s}}{N_{0}}=\ln 2=0.693 \sim-1.6 d B$ ,即带宽不受限制时, 传输1bit信息, 信噪比最低只需要-1.6dB, 这是加性高斯噪声信道信息传输速率的极限值, 是一切编码方式所能达到的理论极限。
 
 $\gamma=\frac{C_{t}}{W}=\log (1+S N R) b p s / H z$--  单位频带的信息传输速率（频带利用率）。
 
-当  $\gamma \Rightarrow 0$  时,  $\mathrm{SNR}=-1.6 \mathrm{~dB}$ , 此时信道完全丧失通信能力。
+当  $\gamma arrow 0$  时,  $\mathrm{SNR}=-1.6 \mathrm{~dB}$ , 此时信道完全丧失通信能力。
 
 
 
@@ -376,9 +376,9 @@ $\gamma=\frac{C_{t}}{W}=\log (1+S N R) b p s / H z$--  单位频带的信息传�
 
 > 现设计一个M进制数字通信系统，要求码元速率为  $10^{4}$  波特。已知信道为 $ A W G N $ 信道，带宽为  $10 \mathrm{kHz}$  ， 噪声的功率谱密度为  $N_{0}=1 \times 10^{-12} \mathrm{~W} / \mathrm{Hz}$ , 系统最大发送功率为  $10 \mathrm{~W}$  ，信道衰减  $80 \mathrm{~dB}$  。问  $\mathrm{M}$  最大取值是多少?
 >
-> 解:  $C=B \log \left(1+\frac{S}{N}\right) $
+> 解:  $C=B \log (1+\frac{S}{N}) $
 > $$
-> 10 \lg \left(\frac{P_{T}}{P_{R}}\right)=10 \lg \left(10 / P_{R}\right)=80 \Rightarrow P_{R}=10^{-7} \mathrm{~W}
+> 10 \lg (\frac{P_{T}}{P_{R}})=10 \lg (10 / P_{R})=80 arrow P_{R}=10^{-7} \mathrm{~W}
 > $$
 >
 >
@@ -386,8 +386,8 @@ $\gamma=\frac{C_{t}}{W}=\log (1+S N R) b p s / H z$--  单位频带的信息传�
 > $$
 > \begin{array}{c}
 > \frac{S}{N}=\frac{10^{-7}}{1 \times 10^{-12} \times 10^{4}}=10 \\
-> C=B \log \left(1+\frac{S}{N}\right) \approx 3.46 \times 10^{4} \mathrm{bit} / \mathrm{s} \\
-> C \geq R_{B} \times \log M \Rightarrow 3.46 \times 10^{4} \geq 10^{4} \times \log M \Rightarrow M \leq 3.46
+> C=B \log (1+\frac{S}{N}) \approx 3.46 \times 10^{4} \mathrm{bit} / \mathrm{s} \\
+> C \geq R_{B} \times \log M arrow 3.46 \times 10^{4} \geq 10^{4} \times \log M arrow M \leq 3.46
 > \end{array}
 > $$
 > 故：M最大取值为 8 。

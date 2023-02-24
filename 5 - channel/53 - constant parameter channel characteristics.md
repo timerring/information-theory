@@ -54,13 +54,13 @@ $$
 其中  K  是任意常数, 则称此带通系统对复包络无失真。 复包络无失真要求:
 $$
 \begin{aligned}
-H(f)=&\left\{\begin{array}{c}
-H_{L}\left(f-f_{c}\right), f>0 \\
-H_{L}^{*}\left(-f-f_{c}\right), f<0
-\end{array}=\left\{\begin{array}{l}
-a e^{-j\left(2 \pi f t_{0}-\theta\right), f>0} \\
-a e^{-j\left(2 \pi f t_{0}+\theta\right), f<0}
-\end{array}\right.\right.\\
+H(f)=&\{\begin{array}{c}
+H_{L}(f-f_{c}), f>0 \\
+H_{L}^{*}(-f-f_{c}), f<0
+\end{array}=\{\begin{array}{l}
+a e^{-j(2 \pi f t_{0}-\theta), f>0} \\
+a e^{-j(2 \pi f t_{0}+\theta), f<0}
+\end{array}..\\
 & \angle H(f)=\varphi(f)=-2 \pi f t_{0}+\theta, f>0 \\
 & \tau_{\mathrm{G}}(f)=-\frac{1}{2 \pi} \frac{d \varphi(f)}{d f}=t_{0}, f>0
 \end{aligned}

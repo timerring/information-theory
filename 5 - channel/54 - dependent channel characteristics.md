@@ -31,7 +31,7 @@ $$
 
 设发送信号为  $s(t)=A \sum_{n=-\infty}^{\infty} d_{n} g(t-n T) \cos 2 \pi f_{c} c t$, $A$ 信号幅度,  $d_{n}$  信息码元,  $g(t)$  信息码元波形,  $f_{c}$  载波频率。
 
-令  $b(t)=\sum_{n=-\infty}^{\infty} d_{n} g(t-n T)$ , 则  $s(t)=A b(t) \cos 2 \pi f_{c} t$  。经过多径信道  $h(t)=\sum_{i=1}^{L} u_{i}(t) \delta\left(t-\tau_{i}(t)\right)$ , 接收信号为
+令  $b(t)=\sum_{n=-\infty}^{\infty} d_{n} g(t-n T)$ , 则  $s(t)=A b(t) \cos 2 \pi f_{c} t$  。经过多径信道  $h(t)=\sum_{i=1}^{L} u_{i}(t) \delta(t-\tau_{i}(t))$ , 接收信号为
 $$
 r(t)=A \sum_{i=1}^{L} u_{i}(t) b\left(t-\tau_{i}(t)\right) \cos \left(2 \pi f_{c} t+\varphi_{i}(t)\right)
 $$
@@ -41,7 +41,7 @@ $ u_{i}(t)$  第  i  条路径的衰落因子,  $\tau_{i}(t)$  为第  i  条路
 $$
 r(t)=A \sum_{i=1}^{L} u_{i}(t) b\left(t-\tau_{i}(t)\right) \cos \left(2 \pi f_{c}\left(t-\tau_{i}(t)\right)\right)
 $$
-一般情况  $u_{i}(t)$ 、 $\tau_{i}(t)$  较载波  $\cos \left(2 \pi f_{c} t\right)$  变化缓慢得多,  $r(t)$  可视为窄带过程, 又可表示为
+一般情况  $u_{i}(t)$ 、 $\tau_{i}(t)$  较载波  $\cos (2 \pi f_{c} t)$  变化缓慢得多,  $r(t)$  可视为窄带过程, 又可表示为
 $$
 \begin{array}{c}
 r(t)=A \sum_{i=1}^{L} u_{i}(t) b\left(t-\tau_{i}(t)\right) \cos \varphi_{i}(t) \cos 2 \pi f_{c} t \\
@@ -56,7 +56,7 @@ $$
 
 #### 1.平坦性衰落
 
-满足:  $\left|\tau_{i}(t)\right|_{\max } \ll T$, $T $ 为码元周期, 且  $\left|\tau_{i}(t)\right|_{\max } \sim 1 / f_{c}$   $b\left(t-\tau_{i}(t)\right) \approx b(t-\overline{\tau(t)}), i=1,2, \ldots, L $, 其中  $\overline{\tau(t)}$  为  $\tau_{i}(t)$  的数学期望。
+满足:  $|\tau_{i}(t)|_{\max } \ll T$, $T $ 为码元周期, 且  $|\tau_{i}(t)|_{\max } \sim 1 / f_{c}$   $b(t-\tau_{i}(t)) \approx b(t-\overline{\tau(t)}), i=1,2, \ldots, L $, 其中  $\overline{\tau(t)}$  为  $\tau_{i}(t)$  的数学期望。
 $$
 \begin{aligned}
 r(t) &=A \sum_{i=1}^{L} u_{i}(t) b\left(t-\tau_{i}(t)\right) \cos \varphi_{i}(t) \cos 2 \pi f_{c} t-A \sum_{i=1}^{L} u_{i}(t) b\left(t-\tau_{i}(t)\right) \sin \varphi_{i}(t) \sin 2 \pi f_{c} t \\
@@ -107,7 +107,7 @@ $$
 
 #### 2.频率选择性衰落
 
-若信道时延  $\left|\tau_{i}(t)\right|_{\max }>T$ , 则  $\boldsymbol{b}\left(\boldsymbol{t}-\boldsymbol{\tau}_{\boldsymbol{i}}(\boldsymbol{t})\right)$  不能近似为  $\boldsymbol{b}(\boldsymbol{t}-\overline{\boldsymbol{\tau}(\boldsymbol{t})})$  。
+若信道时延  $|\tau_{i}(t)|_{\max }>T$ , 则  $\boldsymbol{b}(\boldsymbol{t}-\boldsymbol{\tau}_{\boldsymbol{i}}(\boldsymbol{t}))$  不能近似为  $\boldsymbol{b}(\boldsymbol{t}-\overline{\boldsymbol{\tau}(\boldsymbol{t})})$  。
 
 干扰可存在于不同码元。
 
@@ -164,8 +164,8 @@ $$
 
 时域:
 
- -  信道时延  $\left|\tau_{i}(t)\right|_{\max } \ll T$  (T为信号码元周期), 且  $\left|\tau_{i}(t)\right|_{\max } \sim 1 / f_{c}$ , 信号遭受平坦衰落。接收信号的幅度特性符合瑞利分布或莱斯分布。
-- 信道时延  $\left|\tau_{i}(t)\right|_{\max }>T$ , 频率选择性衰落。
+ -  信道时延  $|\tau_{i}(t)|_{\max } \ll T$  (T为信号码元周期), 且  $|\tau_{i}(t)|_{\max } \sim 1 / f_{c}$ , 信号遭受平坦衰落。接收信号的幅度特性符合瑞利分布或莱斯分布。
+- 信道时延  $|\tau_{i}(t)|_{\max }>T$ , 频率选择性衰落。
 
  频域:
 

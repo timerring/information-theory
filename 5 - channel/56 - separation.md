@@ -20,7 +20,7 @@
 
 设同一信息经过两路信号传输, 包络为  $v_{1}(t)$  和  $v_{2}(t)$ , 设  $u_{0}$  为门限电平, 当小于门限电平时则产生错误, 令
 $$
-P\left[v_{1}(t)<u_{0}\right]=P\left[v_{1}(t)<u_{0}\right]=10^{-3}
+P[v_{1}(t)<u_{0}]=P[v_{1}(t)<u_{0}]=10^{-3}
 $$
 
 
@@ -28,10 +28,9 @@ $$
 
 
 $$
-\begin{array}{l}
-P\left[v_{1}(t)<u_{0}, v_{2}(t)<u_{0}\right]=10^{-3} \times 10^{-3}=10^{-6} \\
-\ll 10^{-3}
-\end{array}
+
+P[v_{1}(t)<u_{0}, v_{2}(t)<u_{0}]=10^{-3} \times 10^{-3}=10^{-6}
+\ll 10^{-3}
 $$
 
 
@@ -207,22 +206,22 @@ $$
 
 在 Alamouti 方案中, 分别令
 $$
-\boldsymbol{X}^{\mathbf{1}}=\left[\begin{array}{ll}
+\boldsymbol{X}^{\mathbf{1}}=[\begin{array}{ll}
 x_{1} & -x_{2}^{*}
-\end{array}\right] \text { 和 } \boldsymbol{X}^{2}=\left[\begin{array}{ll}
+\end{array}] \text { 和 } \boldsymbol{X}^{2}=[\begin{array}{ll}
 x_{2} & x_{1}^{*}
-\end{array}\right]
+\end{array}]
 $$
-表 示天线 1 和天线 2 的发射序列, 很显然, 两根发射天 线的发射序列是正交的, 即
+表 示天线 1 和天线 2 的发射序列, 很显然 , 两根发射天线的发射序列是正交的, 即
 $$
-\boldsymbol{X}^{\mathbf{1}} \cdot\left(\mathbf{X}^{\mathbf{2}}\right)^{*}=x_{1} x_{2}^{*}-x_{2}^{*} x_{1}=0
+\boldsymbol{X}^{\mathbf{1}} \cdot(\mathbf{X}^{\mathbf{2}})^{*}=x_{1} x_{2}^{*}-x_{2}^{*} x_{1}=0
 $$
-此外, Alamouti 编码矩阵 $ \mathbf{X}$  具有如下特性:
+此外, Alamouti 编码矩阵 $ \mathbf{X}$ 具有如下特性:
 $$
-X \cdot X^{H}=\left[\begin{array}{cc}
-\left|x_{1}\right|^{2}+\left|x_{2}\right|^{2} & 0 \\
-0 & \left|x_{1}\right|^{2}+\left|x_{2}\right|^{2}
-\end{array}\right]
+X \cdot X^{H}=[\begin{array}{cc}
+|x_{1}|^{2}+|x_{2}|^{2} & 0 \\
+0 & |x_{1}|^{2}+|x_{2}|^{2}
+\end{array}]
 $$
 其中  $(\cdot)^{\mathrm{H}}$  表示矩阵的共轭转置。
 
