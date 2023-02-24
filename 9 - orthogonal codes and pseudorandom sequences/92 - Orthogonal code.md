@@ -35,7 +35,7 @@ $$
 
 设长为  $\boldsymbol{n}$  的编码中码元只取值  +1  和  -1 , 假设  $\boldsymbol{x}$  和  $\boldsymbol{y}$  是其中两个码组:
 $$
-x=\left(x_{1}, x_{2}, x_{3}, \cdots, x_{n}\right) \quad y=\left(y_{1}, y_{2}, y_{3}, \cdots, y_{n}\right)
+x=(x_{1}, x_{2}, x_{3}, \cdots, x_{n}) \quad y=(y_{1}, y_{2}, y_{3}, \cdots, y_{n})
 $$
 其中:  $x_{i}, y_{i} \in(+1,-1), \quad i=1,2, \cdots, n$ 
 
@@ -48,12 +48,12 @@ $$
 
 例如, 右图所示 4 个数字信号可以看作是如下4 个码组:
 $$
-\left\{\begin{array}{l}
+\{\begin{array}{l}
 s_{1}(t):(+1,+1,+1,+1) \\
 s_{2}(t):(+1,+1,-1,-1) \\
 s_{3}(t):(+1,-1,-1,+1) \\
 s_{4}(t):(+1,-1,+1,-1)
-\end{array}\right.
+\end{array}.
 $$
 按照互相关系数定义式计算容易得知, 这 4 个码组中任意两者之间的相关系数都为 0 , 即这 4 个码组两两正交。我们把这种两两正交的编码称为**正交编码**。
 
@@ -69,12 +69,12 @@ $$
 
 例如, 按照左式规定, 上面例 子可以改写成
 $$
-\left\{\begin{array}{l}
+\{\begin{array}{l}
 s_{1}(t):(0,0,0,0) \\
 s_{2}(t):(0,0,1,1) \\
 s_{3}(t):(0,1,1,0) \\
 s_{4}(t):(0,1,0,1)
-\end{array}\right.
+\end{array}.
 $$
 可以验证互相关系数  $\boldsymbol{\rho}=\mathbf{0}$ .
 
@@ -83,8 +83,8 @@ $$
 上式中, 若用  x  的  j  次循环移位代替  y , 就得到  x  的自相关系数  $\rho_{x}(j)$  。 具体地讲，令
 $$
 \begin{array}{l}
-x=\left(x_{1}, x_{2}, \cdots, x_{n}\right) \\
-y=\left(x_{1+j}, x_{2+j}, \cdots, x_{n}, x_{1}, x_{2}, \cdots x_{j}\right)
+x=(x_{1}, x_{2}, \cdots, x_{n}) \\
+y=(x_{1+j}, x_{2+j}, \cdots, x_{n}, x_{1}, x_{2}, \cdots x_{j})
 \end{array}
 $$
 代入定义式
@@ -105,15 +105,15 @@ $$
 
 
 $$
-x=\left(x_{1}, x_{2}, x_{3}, x_{4}\right)=(+1,-1,-1,+1)
+x=(x_{1}, x_{2}, x_{3}, x_{4})=(+1,-1,-1,+1)
 $$
 则有
 $$
 \begin{array}{l}
 \rho_{x}(0)=\frac{1}{4} \sum_{i=1}^{4} x_{i}^{2}=1\\
-\rho_{x}(1)=\frac{1}{4} \sum_{i=1}^{\overline{\overline{4}}^{4}} x_{i} x_{i+1}=\frac{1}{4}\left(x_{1} x_{2}+x_{2} x_{3}+x_{3} x_{4}+x_{4} x_{1}\right)=\frac{1}{4}(-1+1-1+1)=0 \\
-\rho_{x}(2)=\frac{1}{4} \sum_{i=1}^{1} x_{i} x_{i+2}=\frac{1}{4}\left(x_{1} x_{3}+x_{2} x_{4}+x_{3} x_{1}+x_{4} x_{2}\right)=-1 \\
-\rho_{x}(3)=\frac{1}{4} \sum_{i=1}^{\overline{4}^{1}} x_{i} x_{i+3}=\frac{1}{4}\left(x_{1} x_{4}+x_{2} x_{1}+x_{3} x_{2}+x_{4} x_{3}\right)=0
+\rho_{x}(1)=\frac{1}{4} \sum_{i=1}^{\overline{\overline{4}}^{4}} x_{i} x_{i+1}=\frac{1}{4}(x_{1} x_{2}+x_{2} x_{3}+x_{3} x_{4}+x_{4} x_{1})=\frac{1}{4}(-1+1-1+1)=0 \\
+\rho_{x}(2)=\frac{1}{4} \sum_{i=1}^{1} x_{i} x_{i+2}=\frac{1}{4}(x_{1} x_{3}+x_{2} x_{4}+x_{3} x_{1}+x_{4} x_{2})=-1 \\
+\rho_{x}(3)=\frac{1}{4} \sum_{i=1}^{\overline{4}^{1}} x_{i} x_{i+3}=\frac{1}{4}(x_{1} x_{4}+x_{2} x_{1}+x_{3} x_{2}+x_{4} x_{3})=0
 \end{array}
 $$
 
@@ -124,11 +124,11 @@ $$
 
 例如, 在上例中, 若仅取后 3 个码组, 并且删去其第一位, 构成如下新的编码:
 $$
-\left\{\begin{array}{l}
+\{\begin{array}{l}
 s_{1}{ }^{\prime}(t):(0,1,1) \\
 s_{2}{ }^{\prime}(t):(1,1,0) \\
 s_{3}{ }^{\prime}(t):(1,0,1)
-\end{array}\right.
+\end{array}.
 $$
 则不难验证, 由这 3 个码组所构成的编码是超正交码。
 
@@ -138,7 +138,7 @@ $$
 
 例：上例中
 
-正交码为  $\left\{\begin{array}{l}s_{1}(t):(0,0,0,0) \\ s_{2}(t):(0,0,1,1) \\ s_{3}(t):(0,1,1,0) \\ s_{4}(t):(0,1,0,1)\end{array} \quad\right.$  其反码为  $\left\{\begin{array}{l}(1,1,1,1) \\ (1,1,0,0) \\ (1,0,0,1) \\ (1,0,1,0)\end{array}\right.$ 
+正交码为  $\{\begin{array}{l}s_{1}(t):(0,0,0,0) \\ s_{2}(t):(0,0,1,1) \\ s_{3}(t):(0,1,1,0) \\ s_{4}(t):(0,1,0,1)\end{array} \quad.$  其反码为  $\{\begin{array}{l}(1,1,1,1) \\ (1,1,0,0) \\ (1,0,0,1) \\ (1,0,1,0)\end{array}.$ 
 
 上两者的总体即构成如下双正交码:
 
@@ -156,9 +156,9 @@ $$
 
 补充（度量空间）的完备性定义:
 
-度量空间  $X=(X, d)$  中的序列  $\left(x_{n}\right)$ , 如果对任意给定的 $ \varepsilon>0 $, 都存 在一个  $\mathrm{N}=\mathrm{N}(\varepsilon)$ , 使得对每个  $\mathrm{m}$, $\mathrm{n}>\mathrm{N}$  都有
+度量空间  $X=(X, d)$  中的序列  $(x_{n})$ , 如果对任意给定的 $ \varepsilon>0 $, 都存 在一个  $\mathrm{N}=\mathrm{N}(\varepsilon)$ , 使得对每个  $\mathrm{m}$, $\mathrm{n}>\mathrm{N}$  都有
 $$
-\mathrm{d}\left(\mathrm{x}_{\mathrm{m}}, \mathrm{x}_{\mathrm{n}}\right)<\varepsilon
+\mathrm{d}(\mathrm{x}_{\mathrm{m}}, \mathrm{x}_{\mathrm{n}})<\varepsilon
 $$
 则称它是一个柯西序列。如果空间  X  中的每个柯西序列都收敛, 则称  X  是完备的。
 
@@ -174,32 +174,32 @@ H_{1}=\text { [1] }
 $$
 高阶哈达马矩阵的递推公式如下:
 $$
-H_{N_{m}}=\left[\begin{array}{rr}
+H_{N_{m}}=[\begin{array}{rr}
 H_{N_{m-1}} & H_{N_{m-1}} \\
 H_{N_{m-1}} & -H_{N_{m-1}}
-\end{array}\right]
+\end{array}]
 $$
 式中,  $N_{m}=2^{m}$, $m=1,2,3, \ldots$  。
 
 例如,  m=1  时
 $$
 \begin{array}{c}
-H_{N_{1}}=H_{2}=\left[\begin{array}{rr}
+H_{N_{1}}=H_{2}=[\begin{array}{rr}
 H_{1} & H_{1} \\
 H_{1} & -H_{1}
-\end{array}\right]=\left[\begin{array}{rr}
+\end{array}]=[\begin{array}{rr}
 1 & \mathbf{1} \\
 \mathbf{1} & \mathbf{- 1}
-\end{array}\right] \\
-H_{N_{2}}=H_{4}=\left[\begin{array}{rr}
+\end{array}] \\
+H_{N_{2}}=H_{4}=[\begin{array}{rr}
 H_{2} & H_{2} \\
 H_{2} & -H_{2}
-\end{array}\right]=\left[\begin{array}{rrrr}
+\end{array}]=[\begin{array}{rrrr}
 1 & \mathbf{1} & \mathbf{1} & \mathbf{1} \\
 \mathbf{1} & \mathbf{1} & \mathbf{1} & -\mathbf{1} \\
 \mathbf{1} & \mathbf{1} & \mathbf{- 1} & -\mathbf{1} \\
 \mathbf{1} & \mathbf{- 1} & -\mathbf{1} & \mathbf{1}
-\end{array}\right]
+\end{array}]
 \end{array}
 $$
 ![](https://raw.githubusercontent.com/timerring/picgo/master/picbed/image-20230211103701709.png)
@@ -208,10 +208,10 @@ $$
 $$
 \begin{array}{c}
 H_{N_{3}}=H_{8} \\
-=\left[\begin{array}{rr}
+=[\begin{array}{rr}
 H_{4} & H_{4} \\
 H_{4} & -H_{4}
-\end{array}\right]=\left[\begin{array}{cccccccc}
+\end{array}]=[\begin{array}{cccccccc}
 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
 1 & -1 & 1 & -1 & 1 & -1 & 1 & -1 \\
 1 & 1 & -1 & -1 & 1 & 1 & -1 & -1 \\
@@ -220,27 +220,27 @@ H_{4} & -H_{4}
 1 & -1 & 1 & -1 & -1 & 1 & -1 & 1 \\
 1 & 1 & -1 & -1 & -1 & -1 & 1 & 1 \\
 1 & -1 & -1 & 1 & -1 & 1 & 1 & -1
-\end{array}\right]
+\end{array}]
 \end{array}
 $$
  N_{m}  阶哈达马矩阵的通式可表示为
 $$
-H_{N_{m}}=\left[\begin{array}{ccccc}
+H_{N_{m}}=[\begin{array}{ccccc}
 h_{11} & h_{12} & h_{13} & \cdots & h_{1 N_{m}} \\
 h_{21} & h_{22} & h_{23} & \cdots & h_{2 N_{m}} \\
 \vdots & & & \vdots \\
 h_{N_{m} 1} & h_{N_{m} 2} & h_{N_{m} 3} & \cdots & h_{N_{m} N_{m}}
-\end{array}\right]
+\end{array}]
 $$
 式中, $ N_{m}=2^{m}, m=1,2,3, \ldots, h_{i k} \in(+1,-1)$ 
 用哈达马矩阵  $H_{N m} $ 的行 (或列)可以构成离散沃尔什函数  $W a l[i, t]$ , 它们的对应关 系如下:
 $$
 \begin{array}{c}
-\operatorname{Wal}[i, t]=\sum_{k=1}^{N m} h_{i k} g\left(t-(k-1) T_{c}\right) \\
-g(t)=\left\{\begin{array}{c}
+\operatorname{Wal}[i, t]=\sum_{k=1}^{N m} h_{i k} g(t-(k-1) T_{c}) \\
+g(t)=\{\begin{array}{c}
 1,0 \leq t \leq T_{c} \\
 0, \text { others }
-\end{array}\right.
+\end{array}.
 \end{array}
 $$
 
@@ -248,10 +248,10 @@ $$
 
 (1) 在半开区间  [0,1)  上正交, 即
 $$
-\int_{0}^{1} \operatorname{wal}(i, t) \operatorname{wal}(j, t) \mathrm{d} t=\left\{\begin{array}{cc}
+\int_{0}^{1} \operatorname{wal}(i, t) \operatorname{wal}(j, t) \mathrm{d} t=\{\begin{array}{cc}
 1, & i=j \\
 0, & i \neq j
-\end{array} \quad i, j=0,1,2, \cdots\right.
+\end{array} \quad i, j=0,1,2, \cdots.
 $$
 该性质为沃尔什函数基本性质中最重要的性质。
 

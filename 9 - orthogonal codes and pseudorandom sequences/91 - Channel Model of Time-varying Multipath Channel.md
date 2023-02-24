@@ -66,7 +66,7 @@
 
 ![](https://raw.githubusercontent.com/timerring/picgo/master/picbed/image-20230211095220493.png)
 
-W信道传输信号带宽,  1 / W  为时间分辨率, 抽头  $\left\{c_{n}(t)\right\}$  为互不相关的高斯随机过程。延迟线长度与多径信道中的时间弥散量相对应。多径扩展可以表示为  $T_{\mathrm{m}}=\mathrm{L} / \mathrm{W}$ , 其中  $\mathrm{L}$  为多径信号分量的最大数目。
+W信道传输信号带宽,  1 / W  为时间分辨率, 抽头  $\{c_{n}(t)\}$  为互不相关的高斯随机过程。延迟线长度与多径信道中的时间弥散量相对应。多径扩展可以表示为  $T_{\mathrm{m}}=\mathrm{L} / \mathrm{W}$ , 其中  $\mathrm{L}$  为多径信号分量的最大数目。
 
 例：试确定一个适用于飞机间通信的信道模型, 其中包括一条直接信号传输路径和由周围地面地形对信号散射而引起的二次传输路径。 二次传输路径相对于直接路径有  $\tau=\mathbf{1 0} \mu \mathrm{s}$  的传输时延, 信号带宽为  $\mathrm{W}=\mathbf{1 0 0} \mathrm{kHz}$  。
 
