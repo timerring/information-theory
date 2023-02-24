@@ -263,13 +263,14 @@ $$
 
 
 
+
 $$
 \begin{array}{c}
 \operatorname{Wal}[i, t]=\sum_{k=1}^{N m} h_{i k} g(t-(k-1) T_{c}) \\
 g(t)=\{\begin{array}{c}
 1,0 \leq t \leq T_{c} \\
 0, \text { others }
-\end{array}.
+\end{array}
 \end{array}
 $$
 
